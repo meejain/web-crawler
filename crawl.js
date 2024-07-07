@@ -53,18 +53,20 @@ function getURLsfromHTML(htmlBody, baseURL) {
         if (href.slice(0, 1) === '/') {
             //relative path
             try {
+                console.log(`Checking Crawling ${baseURL}${href}`);
                 const urlobj = new URL(`${baseURL}${href}`);
                 urls.push(urlobj.href);
             } catch (err) {
-                console.log(`Error with relative URL - ${err.message}`);
+                console.log(`Error with relative URL - - - > ${err.message}`);
             }
         } else {
             //absolute path
             try {
+                console.log(`Checking Crawling ${href}`);
                 const urlobj = new URL(href);
                 urls.push(urlobj.href);
             } catch (err) {
-                console.log(`Error with absolute URL - ${err.message}`);
+                console.log(`Error with absolute URL - - - >  ${err.message}`);
             }
         }
     });
