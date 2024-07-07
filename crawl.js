@@ -1,26 +1,47 @@
-const {JSDOM} = require('jsdom');
+const { JSDOM } = require('jsdom');
 
-async function crawlPage(currentURL) {
+async function crawlPage(baseURL, currentURL, pages) {
+
+    const baseURLObj = new URL(baseURL);
+    const currentURLObj = new URL(currentURL);
+    if (baseURLObj.hostname !== currentURLObj.hostname) {
+        console.log(`Skipping ${currentURL} as it is not part of the base domain`);
+        return pages;
+    }
+
+    const normalizeCurrentURL = normalizeURL(currentURL);
+    if (pages[normalizeCurrentURL] > 0) {
+        console.log(`Skipping ${currentURL} as it is already crawled`);
+        pages[normalizeCurrentURL] = pages[normalizeCurrentURL] + 1;
+        return pages;
+    }
+
+    pages[normalizeCurrentURL] = 1;
     console.log(`Actively Crawling ${currentURL}`);
 
     try {
         const resp = await fetch(currentURL);
         if (resp.status > 399) {
             console.log(`Error crawling ${currentURL}: ${resp.status}`);
-            return
+            return pages;
         }
 
         const contentType = resp.headers.get('content-type');
         if (!contentType.includes('text/html')) {
             console.log(`Non HTML Response for ${currentURL} - hence skipping. The content type is ${contentType}`);
-            return
+            return pages;
         }
 
-        console.log(await resp.text());
+        const htmlBody = await resp.text();
+        nextURLs = getURLsfromHTML(htmlBody, baseURL);
+        for (const nextURL of nextURLs) {
+            pages = await crawlPage(baseURL, nextURL, pages);
+        }
 
-    } catch (err) { 
+    } catch (err) {
         console.log(`Error crawling ${currentURL}: ${err.message}`)
     }
+    return pages;
 }
 
 
