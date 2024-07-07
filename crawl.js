@@ -46,6 +46,7 @@ async function crawlPage(baseURL, currentURL, pages) {
 
 
 function getURLsfromHTML(htmlBody, baseURL) {
+    var newBaseURL = null;
     const urls = [];
     const dom = new JSDOM(htmlBody);
     dom.window.document.querySelectorAll('a').forEach((a) => {
@@ -53,8 +54,13 @@ function getURLsfromHTML(htmlBody, baseURL) {
         if (href.slice(0, 1) === '/') {
             //relative path
             try {
-                console.log(`Checking Crawling ${baseURL}${href}`);
-                const urlobj = new URL(`${baseURL}${href}`);
+                if (baseURL.slice(-1) === '/') {
+                    newBaseURL = baseURL.slice(0, -1);
+                } else {
+                    newBaseURL = baseURL;
+                }
+                console.log(`Checking Crawling ${newBaseURL}${href}`);
+                const urlobj = new URL(`${newBaseURL}${href}`);
                 urls.push(urlobj.href);
             } catch (err) {
                 console.log(`Error with relative URL - - - > ${err.message}`);
