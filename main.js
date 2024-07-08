@@ -7,8 +7,18 @@ const crawlStatus = {
     urls: [],
   };
 
+async function crawling(baseURL) {
+    console.log(`Crawling ${baseURL}`);
+    const pages = await crawlPage(baseURL, baseURL, {});
+
+    for (const page of Object.entries(pages)) {
+        console.log(page);
+    }
+}
+
 async function main() {
     var resp = null;
+    var respText = null;
     if (process.argv.length < 3) {
         console.log("Usage: node main.js <input_file>");
         process.exit(1);
@@ -22,7 +32,6 @@ async function main() {
     try {
         const robotsURL = new URL('/robots.txt', baseURL);
         resp = await fetch(robotsURL);
-        console.log(resp.status);
     } catch (err) {
         console.log(`Error fetching ${baseURL}/robots.txt: ${err.message}`);
     }
@@ -30,13 +39,12 @@ async function main() {
         console.log(`Found robots.txt for ${baseURL}, hence getting URL's from Sitemap`);
         crawlStatus.urls = await loadURLsFromRobots(baseURL, baseURL);
         console.log(crawlStatus.urls);
+        // if (crawlStatus.urls.length === 0) {
+        //     console.log("Issue accessing sitemap, hence crawling the base URL");
+        //     crawling(baseURL);
+        // }
     } else {
-        console.log(`Crawling ${baseURL}`);
-        const pages = await crawlPage(baseURL, baseURL, {});
-
-        for (const page of Object.entries(pages)) {
-            console.log(page);
-        }
+        crawling(baseURL);
     }
 }
 

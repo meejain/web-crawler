@@ -1,6 +1,7 @@
 const { JSDOM } = require('jsdom');
 
 async function loadSitemap(sitemapURL, origin, host, config = {}) {
+    console.log(sitemapURL);
     const url = new URL(sitemapURL, origin);
     if (!url.searchParams.get('host')) {
       url.searchParams.append('host', host);
@@ -73,7 +74,7 @@ async function loadSitemap(sitemapURL, origin, host, config = {}) {
         }
         sitemaps.push(sitemapFile);
       }
-  
+      console.log("Here is the list of SiteMap URL's",sitemaps);
       const promises = sitemaps.map((sitemap) => new Promise((resolve, reject) => {
         loadSitemap(sitemap, origin, host, config).then((u) => {
           urls = urls.concat(u);
