@@ -34,8 +34,10 @@ async function main() {
         if (baseURL.slice(-1) === '/') {
             newBaseURL = baseURL.slice(0, -1);
           }
+          else {
+            newBaseURL = baseURL;
+          }
         const robotsURL = new URL('/robots.txt', newBaseURL);
-        console.log("edeD",robotsURL);
         resp = await fetch(robotsURL);
         console.log(resp);
     } catch (err) {

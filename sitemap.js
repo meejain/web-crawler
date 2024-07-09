@@ -10,6 +10,8 @@ async function loadSitemap(sitemapURL, origin, host, config = {}) {
     }
     if (origin.slice(-1) === '/') {
       newOrigin = origin.slice(0, -1);
+    } else {
+      newOrigin = origin;
     }
     resp = await fetch(`${newOrigin}${url.pathname}${url.search}`);
     if (resp.status !== 200) {
