@@ -18,7 +18,8 @@ async function crawling(baseURL) {
 
 async function main() {
     var resp = null;
-    var respText = null;
+    var newBaseURL = null;
+
     if (process.argv.length < 3) {
         console.log("Usage: node main.js <input_file>");
         process.exit(1);
@@ -30,19 +31,24 @@ async function main() {
 
     //check for robots.txt / sitemap.txt
     try {
-        const robotsURL = new URL('/robots.txt', baseURL);
+        if (baseURL.slice(-1) === '/') {
+            newBaseURL = baseURL.slice(0, -1);
+          }
+        const robotsURL = new URL('/robots.txt', newBaseURL);
+        console.log("edeD",robotsURL);
         resp = await fetch(robotsURL);
+        console.log(resp);
     } catch (err) {
-        console.log(`Error fetching ${baseURL}/robots.txt: ${err.message}`);
+        console.log(`Error fetching ${newBaseURL}/robots.txt: ${err.message}`);
     }
-    if (resp.status == 200) {
+    if (resp.status === 200) {
         console.log(`Found robots.txt for ${baseURL}, hence getting URL's from Sitemap`);
         crawlStatus.urls = await loadURLsFromRobots(baseURL, baseURL);
         console.log(crawlStatus.urls);
-        // if (crawlStatus.urls.length === 0) {
-        //     console.log("Issue accessing sitemap, hence crawling the base URL");
-        //     crawling(baseURL);
-        // }
+        if (crawlStatus.urls.length === 0) {
+            console.log("Issue accessing sitemap, hence crawling the base URL");
+            crawling(baseURL);
+        }
     } else {
         crawling(baseURL);
     }
