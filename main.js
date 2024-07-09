@@ -32,10 +32,20 @@ async function main() {
     //check for robots.txt / sitemap.txt
     try {
         if (baseURL.slice(-1) === '/') {
-            newBaseURL = baseURL.slice(0, -1);
+            if (!baseURL.includes('//www')) {
+                newBaseURL = baseURL.slice(0, -1).replace('//', '//www.');
+            }
+            else {
+                newBaseURL = baseURL.slice(0, -1);
+            }
           }
           else {
-            newBaseURL = baseURL;
+            if (!baseURL.includes('//www')) {
+                newBaseURL = baseURL.replace('//', '//www.');
+            }
+            else {
+                newBaseURL = baseURL
+            }
           }
         const robotsURL = new URL('/robots.txt', newBaseURL);
         console.log(robotsURL);
@@ -45,7 +55,7 @@ async function main() {
     }
     if (resp.status === 200) {
         console.log(`Found robots.txt for ${baseURL}, hence getting URL's from Sitemap`);
-        crawlStatus.urls = await loadURLsFromRobots(baseURL, baseURL);
+        crawlStatus.urls = await loadURLsFromRobots(newBaseURL, newBaseURL);
         console.log(crawlStatus.urls);
         if (crawlStatus.urls.length === 0) {
             console.log("Issue accessing sitemap, hence crawling the base URL");
