@@ -38,8 +38,8 @@ async function main() {
             newBaseURL = baseURL;
           }
         const robotsURL = new URL('/robots.txt', newBaseURL);
+        console.log(robotsURL);
         resp = await fetch(robotsURL);
-        console.log(resp);
     } catch (err) {
         console.log(`Error fetching ${newBaseURL}/robots.txt: ${err.message}`);
     }

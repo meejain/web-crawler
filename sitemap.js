@@ -3,7 +3,6 @@ const { JSDOM } = require('jsdom');
 async function loadSitemap(sitemapURL, origin, host, config = {}) {
     var resp = null;
     var newOrigin = null;
-    console.log(sitemapURL);
     const url = new URL(sitemapURL, origin);
     if (!url.searchParams.get('host')) {
       url.searchParams.append('host', host);
@@ -17,7 +16,6 @@ async function loadSitemap(sitemapURL, origin, host, config = {}) {
     if (resp.status !== 200) {
       resp = await fetch(`${newOrigin}${url.pathname}`);
     }
-    console.log(resp);
     if (resp.ok) {
       if (config.log) {
         config.log(`Extracting URLs from sitemap: ${sitemapURL}`);
@@ -56,7 +54,6 @@ async function loadSitemap(sitemapURL, origin, host, config = {}) {
   }
   
   async function loadURLsFromRobots(origin, host, config = {}) {
-    console.log("ede2",origin);
     let urls = [];
     const url = new URL(`/robots.txt?host=${host}`, origin);
     const res = await fetch(url.toString());
@@ -82,7 +79,6 @@ async function loadSitemap(sitemapURL, origin, host, config = {}) {
       if (sitemaps.length === 0) {
         var smURL = new URL(`/sitemap.xml`, origin);
         sitemapFile = smURL.toString();
-        console.log(sitemapFile);
         sitemaps.push(sitemapFile);
       }
       console.log("Here is the list of SiteMap URL's",sitemaps);
