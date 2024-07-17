@@ -22,7 +22,7 @@ async function crawlPage(baseURL, currentURL, pages) {
     try {
         const resp = await fetch(currentURL);
         if (resp.status > 399) {
-            console.log(`Error crawling ${currentURL}: ${resp.status}`);
+            console.log(`1 - Error crawling ${currentURL}: ${resp.status}`);
             return pages;
         }
 
@@ -39,7 +39,7 @@ async function crawlPage(baseURL, currentURL, pages) {
         }
 
     } catch (err) {
-        console.log(`Error crawling ${currentURL}: ${err.message}`)
+        console.log(`2 - Error crawling ${currentURL}: ${err.message}`)
     }
     return pages;
 }
@@ -50,8 +50,12 @@ function getURLsfromHTML(htmlBody, baseURL) {
     const urls = [];
     const dom = new JSDOM(htmlBody);
     dom.window.document.querySelectorAll('a').forEach((a) => {
+        console.log(a);
         const href = a.getAttribute('href');
-        if (href.slice(0, 1) === '/') {
+        if (!href) {
+            return;
+        }
+        if ((href.slice(0, 1) === '/') || (href.slice(0, 1) === '#')) {
             //relative path
             try {
                 if (baseURL.slice(-1) === '/') {
