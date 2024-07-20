@@ -50,7 +50,6 @@ function getURLsfromHTML(htmlBody, baseURL) {
     const urls = [];
     const dom = new JSDOM(htmlBody);
     dom.window.document.querySelectorAll('a').forEach((a) => {
-        console.log(a);
         const href = a.getAttribute('href');
         if (!href) {
             return;

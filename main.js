@@ -1,5 +1,6 @@
 const {crawlPage} = require('./crawl.js');
 const {loadURLsFromRobots} = require('./sitemap.js');
+const { printReport } = require('./report.js');
 
 const crawlStatus = {
     crawled: 0,
@@ -10,10 +11,7 @@ const crawlStatus = {
 async function crawling(baseURL) {
     console.log(`Crawling ${baseURL}`);
     const pages = await crawlPage(baseURL, baseURL, {});
-
-    for (const page of Object.entries(pages)) {
-        console.log(page);
-    }
+    printReport(pages);
 }
 
 async function main() {
