@@ -9,6 +9,14 @@ function printReport(pages) {
     console.log("========== End Report ==========");
 }
 
+function printBrokenLinks(brokenLinks) {
+    console.log("========== Broken Links ==========");
+    for (const brokenLink of brokenLinks) {
+        console.log(brokenLink);
+    }
+    console.log("========== End Broken Links ==========");
+ }
+
 
 
 function sortPages(pages) {
@@ -21,5 +29,6 @@ function sortPages(pages) {
 
 module.exports = {  
     sortPages,
-    printReport
+    printReport,
+    printBrokenLinks
  };
