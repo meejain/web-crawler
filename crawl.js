@@ -62,6 +62,12 @@ function getURLsfromHTML(htmlBody, baseURL) {
         if (!href) {
             return;
         }
+        if (href.includes('mailto:') || href.includes('tel:')) {
+            return;
+        }
+        if (href.includes('?page=')) {
+            return;
+        }
         if ((href.slice(0, 1) === '/') || (href.slice(0, 1) === '#')) {
             //relative path
             try {
