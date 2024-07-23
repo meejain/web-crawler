@@ -62,7 +62,7 @@ function getURLsfromHTML(htmlBody, baseURL) {
         if (!href) {
             return;
         }
-        if (href.includes('mailto:') || href.includes('tel:')) {
+        if (href.includes('mailto:') || href.includes('tel:') || href.includes('javascript:')) {
             return;
         }
         if (href.includes('?page=')) {
