@@ -16,6 +16,15 @@ class inputObj {
 }
 
 
+function sortPages(pages) {
+    const pageArray = Object.entries(pages);
+    pageArray.sort((a, b) => {
+        return b[1] - a[1];
+    });
+    return pageArray;
+}
+
+
   function setUpQueryDesktop(site) {
     const YOUR_API_KEY = "AIzaSyCwZkCTnraHXOjnCWuq2oxXJOE-ll1hzuI";
     const api = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
@@ -93,6 +102,29 @@ async function crawling(baseURL) {
     printReport(pages);
     const brokenLinks = returnbrokenLinksURLs();
     printBrokenLinks(brokenLinks);
+    const sortedPages = sortPages(pages);
+    crawlStatus.urls = [];
+    for (const sortedPage of sortedPages) {
+        const url = sortedPage[0];
+        crawlStatus.urls.push(url);
+    }
+
+    //Code below to get the LHS of the URL's from Google Crawler
+    raw_data = [];
+    targetUrl = '';
+
+    crawlStatus.urls.slice(0, 5).forEach((url) => {
+        const urlPattern = /^http/;
+        if (!urlPattern.test(url)) {
+            url = 'https://' + url;
+        }
+  
+        targetUrl = url;
+        inputObject = new inputObj('AMS', url);
+        raw_data.push(inputObject);
+    });
+    console.log("Fetching the Performance Scores for the URL's from sitemap . . . ");
+    mainfunction();
 }
 
 
@@ -139,6 +171,7 @@ async function main() {
         }
         if (resp.status === 200) {
             console.log(`Found robots.txt for ${baseURL}, hence getting URL's from Sitemap`);
+            crawlStatus.urls = [];
             crawlStatus.urls = await loadURLsFromRobots(newBaseURL, newBaseURL);
             console.log(crawlStatus.urls);
 
