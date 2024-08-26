@@ -123,7 +123,7 @@ async function crawling(baseURL) {
         inputObject = new inputObj('AMS', url);
         raw_data.push(inputObject);
     });
-    console.log("Fetching the Performance Scores for the URL's from sitemap . . . ");
+    console.log("Fetching the Performance Scores for the URL's from Google Crawler . . . ");
     mainfunction();
 }
 
