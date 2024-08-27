@@ -27,7 +27,8 @@ async function loadSitemap(sitemapURL, origin, host, config = {}) {
       const errorNode = sitemap.querySelector('parsererror');
       if (errorNode) {
         // parsing failed
-        throw new Error(`parsing sitemap ${sitemapURL}: ${errorNode.textContent}`);
+        console.log(`parsing sitemap ${sitemapURL}: ${errorNode.textContent}`);
+        // throw new Error(`parsing sitemap ${sitemapURL}: ${errorNode.textContent}`);
       } else {
         const subSitemaps = [...sitemap.querySelectorAll('sitemap loc')];
         let urls = [];
