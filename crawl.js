@@ -1,18 +1,27 @@
 const { JSDOM } = require('jsdom');
 const brokenLinksURLs = [];
+const notBaseDomainURLs = [];
 var parentURL = null;
 
 async function crawlPage(baseURL, currentURL, parentURL, pages) {
 
     const baseURLObj = new URL(baseURL);
     const currentURLObj = new URL(currentURL);
-    if (baseURLObj.hostname !== currentURLObj.hostname) {
-        console.log(`Skipping ${currentURL} as it is not part of the base domain but will check for broken links`);
-        const resp = await fetch(currentURL);
-        if (resp.status > 399) {
-            brokenLinksURLs.push(`${parentURL}:${currentURL}-${resp.status}`);
-        } 
-        return pages;
+    if ((baseURLObj.hostname.replace('www.', '') !== currentURLObj.hostname.replace('www.', ''))) {
+        const normalizeCurrentURL = normalizeURL(currentURL);
+        if (notBaseDomainURLs[normalizeCurrentURL] > 0) {
+            console.log(`Skipping this not base domain URL - ${currentURL} as it is already crawled`);
+            notBaseDomainURLs[normalizeCurrentURL] = notBaseDomainURLs[normalizeCurrentURL] + 1;
+            return pages;
+        } else {
+            notBaseDomainURLs[normalizeCurrentURL] = 1;
+            console.log(`Skipping ${currentURL} as it is not part of the base domain but will check for broken links`);
+            const resp = await fetch(currentURL);
+            if (resp.status == 404) {
+                brokenLinksURLs.push(`${parentURL}#${currentURL}#${resp.status}`);
+            }
+            return pages;
+        }
     }
 
     const normalizeCurrentURL = normalizeURL(currentURL);
