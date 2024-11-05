@@ -2,6 +2,9 @@ const { JSDOM } = require('jsdom');
 const brokenLinksURLs = [];
 const notBaseDomainURLs = [];
 var parentURL = null;
+var pattern1 = /^((http|https|ftp):\/\/)/;
+var pattern2 = /^(www.)/;
+
 
 async function crawlPage(baseURL, currentURL, parentURL, pages) {
 
@@ -71,7 +74,7 @@ function getURLsfromHTML(htmlBody, baseURL) {
         if (!href) {
             return;
         }
-        if (href.includes('mailto:') || href.includes('tel:') || href.includes('javascript:')) {
+        if (href.includes('mailto:') || href.includes('tel:') || href.includes('javascript:') || href.includes('.pdf') || href.includes('.jpg') || href.includes('.mp3')) {
             return;
         }
         if (href.includes('?page=')) {
@@ -94,9 +97,26 @@ function getURLsfromHTML(htmlBody, baseURL) {
         } else {
             //absolute path
             try {
+                if (baseURL.slice(-1) === '/') {
+                    newBaseURL = baseURL.slice(0, -1);
+                } else {
+                    newBaseURL = baseURL;
+                }
                 console.log(`Checking Crawling ${href}`);
-                const urlobj = new URL(href);
-                urls.push(urlobj.href);
+                if (pattern2.test(href)) {
+                    const urlobj = new URL(`https://${href}`);
+                    console.log(`Checking Crawling ${urlobj}`);
+                    urls.push(urlobj.href);
+                } else if (!pattern1.test(href)) {
+                    const urlobj = new URL(`${newBaseURL}/${href}`);
+                    console.log(`Checking Crawling ${urlobj}`);
+                    urls.push(urlobj.href);
+                } else {
+                    const urlobj = new URL(href);
+                    urls.push(urlobj.href);
+                }
+                // const urlobj = new URL(href);
+                // urls.push(urlobj.href);
             } catch (err) {
                 console.log(`Error with absolute URL - - - >  ${err.message}`);
             }

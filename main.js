@@ -1,5 +1,5 @@
 const {crawlPage, returnbrokenLinksURLs} = require('./crawl.js');
-const {loadURLsFromRobots} = require('./sitemap.js');
+const {loadURLsFromRobots, loadSitemap } = require('./sitemap.js');
 const { printReport, printBrokenLinks } = require('./report.js');
 
 const crawlStatus = {
@@ -132,6 +132,7 @@ async function crawling(baseURL) {
 async function main() {
     var resp = null;
     var newBaseURL = null;
+    const sitemaps = [];
 
     if (process.argv.length < 4) {
         console.log("Usage: node main.js <input_file>");
@@ -174,6 +175,7 @@ async function main() {
             crawlStatus.urls = [];
             crawlStatus.urls = await loadURLsFromRobots(newBaseURL, newBaseURL);
             console.log(crawlStatus.urls);
+            console.log("Total No. of URL's in the Sitemap: " + crawlStatus.urls.length);
 
             if (crawlStatus.urls.length === 0) {
                 console.log("Issue accessing sitemap, hence crawling the base URL");
@@ -197,11 +199,17 @@ async function main() {
             console.log("Fetching the Performance Scores for the URL's from sitemap . . . ");
             mainfunction();
         } else {
-            console.log("Issue accessing sitemap, hence crawling the base URL");
-        } 
+            console.log("Issue accessing robots.txt, hence trying SiteMap directly ...");
+            var smURL = new URL(`/sitemap.xml`, newBaseURL);
+            sitemapFile = smURL.toString();
+            console.log(sitemapFile);
+            const u = await loadSitemap(sitemapFile, newBaseURL, newBaseURL);
+            console.log(u);
+            console.log("Total No. of URL's in the Sitemap: " + u.length);  
+        }
     } else {
         await crawling(baseURL);
-    }  
+    }
 }
 
 main();
