@@ -23,66 +23,6 @@ async function checkPage404(baseURL) {
     }
 }
 
-
-async function crawlPage404(baseURL, currentURL, parentURL, pages) {
-
-    const baseURLObj = new URL(baseURL);
-    const currentURLObj = new URL(currentURL);
-    if ((baseURLObj.hostname.replace('www.', '') !== currentURLObj.hostname.replace('www.', ''))) {
-        const normalizeCurrentURL = normalizeURL(currentURL);
-        if (notBaseDomainURLs[normalizeCurrentURL] > 0) {
-            console.log(`Skipping this not base domain URL - ${currentURL} as it is already crawled`);
-            notBaseDomainURLs[normalizeCurrentURL] = notBaseDomainURLs[normalizeCurrentURL] + 1;
-            return pages;
-        } else {
-            notBaseDomainURLs[normalizeCurrentURL] = 1;
-            console.log(`Skipping ${currentURL} as it is not part of the base domain but will check for broken links`);
-            const resp = await fetch(currentURL);
-            if (resp.status == 404) {
-                brokenLinksURLs.push(`${parentURL}#${currentURL}#${resp.status}`);
-            }
-            return pages;
-        }
-    }
-
-    const normalizeCurrentURL = normalizeURL(currentURL);
-    if (pages[normalizeCurrentURL] > 0) {
-        console.log(`Skipping ${currentURL} as it is already crawled`);
-        pages[normalizeCurrentURL] = pages[normalizeCurrentURL] + 1;
-        return pages;
-    }
-
-    pages[normalizeCurrentURL] = 1;
-    console.log(`Actively Crawling ${currentURL}`);
-
-    try {
-        const resp = await fetch(currentURL);
-        if (resp.status > 399) {
-            console.log(`1 - Error crawling ${currentURL}: ${resp.status}`);
-            brokenLinksURLs.push(`${parentURL}:${currentURL}-${resp.status}`);
-            return pages;
-        }
-
-        const contentType = resp.headers.get('content-type');
-        if (!contentType.includes('text/html')) {
-            console.log(`Non HTML Response for ${currentURL} - hence skipping. The content type is ${contentType}`);
-            return pages;
-        }
-
-        const htmlBody = await resp.text();
-        var nextURLs = getURLsfromHTML(htmlBody, baseURL);
-        if (nextURLs) parentURL = currentURL;
-        for (const nextURL of nextURLs) {
-            pages = await crawlPage404(baseURL, nextURL, parentURL, pages);
-        }
-
-    } catch (err) {
-        console.log(`2 - Error crawling ${currentURL}: ${err.message}`)
-    }
-    return pages;
-}
-
-
 function getURLsfromHTML(htmlBody, baseURL) {
     var newBaseURL = null;
     const urls = [];
@@ -139,7 +79,6 @@ function getURLsfromHTML(htmlBody, baseURL) {
             }
         }
     });
-    console.log([...new Set(urls)]);
     return [...new Set(urls)];
 }
 
@@ -159,7 +98,6 @@ function returnbrokenLinksURLs404() {
 module.exports = {
     normalizeURL,
     getURLsfromHTML,
-    crawlPage404,
     returnbrokenLinksURLs404,
     checkPage404
 }
