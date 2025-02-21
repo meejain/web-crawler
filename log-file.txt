@@ -1,0 +1,1050 @@
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r105 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r105
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-013019.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-013019.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/enterprise%20audio%20013019.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-013019-attachment.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r106 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r106
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-021319.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-021319.pdf',
+  'http://stream.co.clark.nv.us/adminsvcs/Enterprise%20Audio%20021319%20Part%201.mp3',
+  'http://stream.co.clark.nv.us/adminsvcs/Enterprise%20Audio%20021319%20Part%202.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r117 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r117
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-052919.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-052919.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/enterprise%20audio%20052919.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-052919-attachment.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1214 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1214
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-11-19-hb-boardbook-web.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-11-19-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-11-19-hb-annotatedagenda-final.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1216 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1216
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/08-14-19-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/08-14-19-hb-ann-agenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1219 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1219
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/10-11-18-boardbook.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/10-11-18-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/10-11-18-annagenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1221 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1221
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-08-18-hb-boardbook.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-08-18-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-08-18-hb-annagenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1223 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1223
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-14-17-hb-boardbook.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-14-17-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-14-17-hb-annagenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1224 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1224
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-09-17-hb-boardbook.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-09-17-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-09-17-hb-annagenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1226 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1226
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-08-16-hb-supportingdocs.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-08-16-hb-minutesfinal.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-08-16-hb-annagenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1228 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1228
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/04-21-16-hb-supportingdocs.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/04-21-16-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/04-21-16-hb-annagenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1230 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1230
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-10-15-hb-supportingdocs.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-10-15-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/12-10-15-hb-annagenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1237 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1237
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/10-09-13-hb-supportingdocs.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/10-09-13-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/10-09-13-hb-ann-agenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1238 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1238
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/04-11-13-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/04-11-13-hb-ann-agenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1239 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1239
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-14-13-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-14-13-hb-ann-agenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r124 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r124
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-073119.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-073119.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/enterprise%20audio%20073119.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-073119-backup.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1276 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1276
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/spring-valley-agenda-073019.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/spring-valley-minutes-073019.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/spring%20valley%20audio%20073019.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/spring-valley-minutes-073019-attch.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r128 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r128
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-081419.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-081419.pdf',
+  'http://stream.co.clark.nv.us/adminsvcs/Enterprise%20Audio%20081419%20Part1.mp3',
+  'http://stream.co.clark.nv.us/adminsvcs/Enterprise%20Audio%20081419%20Part2.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1295 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1295
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/spring-valley-agenda-103018.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/spring-valley-minutes-103018.pdf',
+  'http://stream.co.clark.nv.us/adminsvcs/Spring%20Valley%20Audio%20103018Part1.mp3',
+  'http://stream.co.clark.nv.us/adminsvcs/Spring%20Valley%20Audio%20103018Part2.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r132 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r132
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-091119.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-091119.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/enterprise%20audio%20091119.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-091119-attachment.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1331 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1331
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/stab-agenda-03112020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/stab-minutes-03112020-revised.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/stab%20agenda%2003112020.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1332 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1332
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/stab-agenda-02122020-revised.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/stab-minutes-02122020-rev.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/stab%20audio%2002122020.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1374 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1374
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-082719.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-minutes-082719.pdf',
+  'http://stream.co.clark.nv.us/adminsvcs/Lone%20Mtn%20Audio%20082719%20Part%201.mp3',
+  'http://stream.co.clark.nv.us/adminsvcs/Lone%20Mtn%20Audio%20082719%20Part%202.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1380 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1380
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-052819.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-minutes-052819.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/lone%20mtn%20audio%20052819.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-052819-backup.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1386 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1386
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-022619.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-minutes-022619.pdf',
+  'http://stream.co.clark.nv.us/adminsvcs/Lone%20Mtn%20Audio%20022619%20Part%201.mp3',
+  'http://stream.co.clark.nv.us/adminsvcs/Lone%20Mtn%20Audio%20022619%20Part%202.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1389 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1389
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-011519.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-minutes-011519.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/lone%20mtn%20audio%20011519.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-011519-backup.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r139 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r139
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-100919.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-100919.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/enterprise%20audio%20100919.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-100919-attachment.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1393 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1393
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-111318.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-minutes-111318.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-111318-part-2.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1396 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1396
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-092518.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-minutes-092518.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/lone%20mtn%20audio%20092518.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-092518-backup.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1397 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1397
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-agenda-091118.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/lone-mtn-minutes-091118.pdf',
+  'http://stream.co.clark.nv.us/adminsvcs/Lone%20Mtn%20Audio%20091118%20pt1.mp3',
+  'http://stream.co.clark.nv.us/adminsvcs/Lone%20Mtn%20Audio%20091118%20pt2.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1409 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1409
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ltab-agenda-06092020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ltab-minutes-06092020-revised.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/ltab%20audio%2006092020.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/public-comment.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r141 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r141
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-103019.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-103019.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/enterprise%20audio%20103019.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-103019-attachment.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1411 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1411
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/moapa-agenda-111219.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/moapa-minutes-111219.pdf',
+  'http://stream.co.clark.nv.us/adminsvcs/Moapa%20Audio%20111219%20Part%201.mp3',
+  'http://stream.co.clark.nv.us/adminsvcs/Moapa%20Audio%20111219%20Part%202.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1443 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1443
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/moapa-valley-agenda-092618.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/moapa-valley-minutes-092618.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/moapa-valley-agenda-092618-backup.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1528 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1528
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/sunrise-manor-agenda-081320.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/sunrise-manor-minutes-081320.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r157 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r157
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-101018.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-minutes-101018.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/enterprise%20audio%20101018.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-101018-attachment.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1579 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1579
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-11-13-19.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/november-13-meeting-minutes.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/aapicc%20audio%20111319.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/backup.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1580 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1580
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-100919.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/october-9-meeting-minutes.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/aapicc%20audio%20100919.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-100919-backup.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1581 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1581
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-12-11-19.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/december-11-meeting-minutes-revision.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/aapicc%20audio%20121119.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/november-13-meeting-minutes.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1584 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1584
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-1-8-20.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/january-8-2020-meeting-minutes.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/aapicc%20audio%20010820.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/backup-materials.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1585 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1585
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-2-12-2020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/february-12-2020-meeting-minutes.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/aapicc%20audio%20021220.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/january-8-2020-meeting-minutes.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1586 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1586
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-3-11-20.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/march-11-2020-meeting-minutes-final.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/aapicc%20audio%20031120.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/february-12-2020-meeting-minutes.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1589 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1589
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-3-11-20.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/february-12-2020-meeting-minutes.pdf',
+  'https://media.clarkcountynv.gov/adminsvcs/aapicc%20audio%20031120.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/february-12-2020-meeting-minutes-1.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1591 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1591
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/may-13-aapicc-meeting-agenda.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/may-13-2020-meeting-minutes-final.pdf',
+  'https://webfiles.clarkcountynv.gov/Boards-Committees-Commissions/American%20Pacific%20Islanders%20Community%20Commission/2020/Asian%20American%20Pacific%20Islanders%20Community%20Commission%2020200514%200146%201.mp3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/may-13-2020-meeting-minutes-draft.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1592 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1592
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/june-10-2020-agenda.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/june-10-2020-meeting-minutes.pdf',
+  'https://webfiles.clarkcountynv.gov/Boards-Committees-Commissions/American%20Pacific%20Islanders%20Community%20Commission/2020/June%20ASIAN-AMERICAN%20PACIFIC%20ISLANDERS%20%20COMMUNITY%20COMMISSION-20200611%200151-1%20(1).mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1593 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1593
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/july-8-2020-aapicc-agenda.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/july-8-2020-meeting-minutes.pdf',
+  'https://webfiles.clarkcountynv.gov/Boards-Committees-Commissions/American%20Pacific%20Islanders%20Community%20Commission/2020/July%20ASIAN-AMERICAN%20PACIFIC%20ISLANDERS%20COMMUNITY%20COMMISSION-20200709%200154-1.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1594 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1594
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-8-12-2020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/july-8-2020-meeting-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/august-12-2020-meeting-minutes-final.pdf',
+  'https://webfiles.clarkcountynv.gov/August%20ASIAN-AMERICAN%20PACIFIC%20ISLANDERS%20%20COMMUNITY%20COMMISSION-20200813%200207-2.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1625 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1625
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-082620-special.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/august-26-2020-meeting-minutes-final.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-082620-special-backup-documents.pdf',
+  'https://webfiles.clarkcountynv.gov/ASIAN-AMERICAN%20PACIFIC%20ISLANDERS%20COMMUNITY%20COMMISSION-20200827%200151-1.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1705 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1705
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/meeting-agenda-20190529.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/meeting-minutes-20190529.pdf',
+  'https://cms8.revize.com/revize/repository/clarknv/Boards-Committees-Commissions/OHV/2019/190529_0045.MP3',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/agenda-item-6.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/agenda-item-7.pdf'
+]
+Here is the 404 urlhttps://cms8.revize.com/revize/repository/clarknv/Boards-Committees-Commissions/OHV/2019/190529_0045.MP3
+========== Broken Links ==========
+https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1705#https://cms8.revize.com/revize/repository/clarknv/Boards-Committees-Commissions/OHV/2019/190529_0045.MP3#404
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1718 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1718
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-9-16-2020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/september-16-2020-final.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/august-26-2020-meeting-minutes-draft.pdf',
+  'https://webfiles.clarkcountynv.gov/AAPICC-20200917%200204-1.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1804 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1804
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/paradise-agenda-102720.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/paradise-minutes-102720.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1812 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1812
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-10-28-2020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/october-28-2020-meeting-minutes-final.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/september-16-2020-draft.pdf',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20201029%200159-1.mp4'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1847 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1847
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/sandy-valley-agenda-111020.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1848 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1848
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/enterprise-agenda-111020.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1853 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1853
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-11-18-2020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/november-18-2020-meeting-minutes-final.pdf',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20201119%200301-1.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1859 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1859
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ohv-meeting-cancellation-11-18-20.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1895 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1895
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-12-16-2020.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/december-16-2020-meeting-minutes-final.pdf',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20201217%200300-1.mp4'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1997 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r1997
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-1-20-2021.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/january-20-2021-meeting-minutes-final.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/december-16-2020-meeting-minutes-draft.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-asian-pacific-heritage-month-proposal.pdf',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20210121%200300-1.mp4'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2041 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2041
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-2-10-2021.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/february-10-2021-meeting-minutes-final.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/january-20-2021-meeting-minutes-draft.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/audio',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20210211%200300-1.mp4'
+]
+Here is the 404 urlhttps://main--clarkcountynv--aemsites.aem.live/audio
+========== Broken Links ==========
+https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2041#https://main--clarkcountynv--aemsites.aem.live/audio#404
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2052 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2052
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-18-21-hb-agenda-february-final-3.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-18-21-hb-minutes-approved.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-18-2021-hb-boardbook-1-resized.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/02-18-21-hb-annotated-agenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2103 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2103
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-meeting-information-3-10-21.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/march-10-2021-meeting-minutes-final.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/audio',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20210311%200304-1.mp3'
+]
+Here is the 404 urlhttps://main--clarkcountynv--aemsites.aem.live/audio
+========== Broken Links ==========
+https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2103#https://main--clarkcountynv--aemsites.aem.live/audio#404
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2159 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2159
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-4-21-2021.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/march-10-2021-meeting-minutes-draft.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/audio',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20210422%200230-1.mp3'
+]
+Here is the 404 urlhttps://main--clarkcountynv--aemsites.aem.live/audio
+========== Broken Links ==========
+https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2159#https://main--clarkcountynv--aemsites.aem.live/audio#404
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2218 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2218
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-5-26-2021.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/april-21-2021-meeting-minutes-draft.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/audio',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/feasibility-study-final-edition-ver-2.pdf',
+  'https://webfiles.clarkcountynv.gov/AAPICC%20Meeting-20210527%200156-1.mp3'
+]
+Here is the 404 urlhttps://main--clarkcountynv--aemsites.aem.live/audio
+========== Broken Links ==========
+https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2218#https://main--clarkcountynv--aemsites.aem.live/audio#404
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2225 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2225
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ohv-committee-5-26-21-agenda-and-supporting-materials.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ohv-5-26-21-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/5-26-21-audio',
+  'https://webfiles.clarkcountynv.gov/OHV%205.26.21.mp3'
+]
+Here is the 404 urlhttps://main--clarkcountynv--aemsites.aem.live/5-26-21-audio
+========== Broken Links ==========
+https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2225#https://main--clarkcountynv--aemsites.aem.live/5-26-21-audio#404
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2246 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2246
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/aapicc-agenda-6-9-2021.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/may-26-2021-meeting-minutes-draft.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2262 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2262
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/spring-valley-agenda-062921.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/spring-valley-minutes-062921.pdf',
+  'https://media.clarkcountynv.gov//adminsvcs/spring%20valley%20audio%20062921.mp3'
+]
+========== Broken Links ==========
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2294 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2294
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ohv-7-28-21agenda.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ohv-7-28-21-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/ohv-committee-7-28-21-agenda-and-supporting-data.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/7-28-21-audio',
+  'https://webfiles.clarkcountynv.gov/OHV%207.28.21.MP3'
+]
+Here is the 404 urlhttps://main--clarkcountynv--aemsites.aem.live/7-28-21-audio
+========== Broken Links ==========
+https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2294#https://main--clarkcountynv--aemsites.aem.live/7-28-21-audio#404
+========== End Broken Links ==========
+
+> web-crawler@1.0.0 start
+> node --no-warnings main.js https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2317 g404
+
+Checking for 404's https://main--clarkcountynv--aemsites.aem.live/agenda/agenda-detail-t43-r2317
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+https://main--clarkcountynv--aemsites.aem.live
+[
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/08-04-21-hb-agenda.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/08-04-2021-hb-minutes.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/08-04-21-hb-packet-complete.pdf',
+  'https://main--clarkcountynv--aemsites.aem.live/assets/documents/general/agenda/08-04-21-hb-annotated-agenda.pdf'
+]
+========== Broken Links ==========
+========== End Broken Links ==========

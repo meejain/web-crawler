@@ -1,5 +1,6 @@
-const {crawlPage, returnbrokenLinksURLs} = require('./crawl.js');
-const {loadURLsFromRobots, loadSitemap } = require('./sitemap.js');
+const { crawlPage, returnbrokenLinksURLs } = require('./crawl.js');
+const { checkPage404, returnbrokenLinksURLs404 } = require('./justbrokenlinks.js');
+const { loadURLsFromRobots, loadSitemap } = require('./sitemap.js');
 const { printReport, printBrokenLinks } = require('./report.js');
 
 const crawlStatus = {
@@ -25,10 +26,10 @@ function sortPages(pages) {
 }
 
 
-  function setUpQueryDesktop(site) {
+function setUpQueryDesktop(site) {
     const YOUR_API_KEY = "AIzaSyCwZkCTnraHXOjnCWuq2oxXJOE-ll1hzuI";
     const api = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
-    if (!site.startsWith('http')){ site = "https://" + site; }
+    if (!site.startsWith('http')) { site = "https://" + site; }
     const parameters = {
         url: encodeURIComponent(site)
     };
@@ -43,10 +44,10 @@ function sortPages(pages) {
 
 
 
-  function setUpQueryMobile(site) {
+function setUpQueryMobile(site) {
     const YOUR_API_KEY = "AIzaSyCwZkCTnraHXOjnCWuq2oxXJOE-ll1hzuI";
     const api = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
-    if (!site.startsWith('http')){ site = "https://" + site; }
+    if (!site.startsWith('http')) { site = "https://" + site; }
     const parameters = {
         url: encodeURIComponent(site)
     };
@@ -60,14 +61,14 @@ function sortPages(pages) {
     return query;
 }
 
-  async function fetchURL(url) {
+async function fetchURL(url) {
     const resp = await fetch(url);
     const response = await resp.json();
     return response;
- }
+}
 
 
-  async function lhsrun(site, customer) {
+async function lhsrun(site, customer) {
     const terms = [".json", "?", "granite/core", "404.html", "healthcheck", "jpg", "css", "svg", "*"];
     const result1 = terms.some(term => site.includes(term));
     if (result1) { console.log(customer + "#" + site + "#" + "We need a different URL"); }
@@ -83,16 +84,16 @@ function sortPages(pages) {
     }
 }
 
-  async function displayLHS(data) {
+async function displayLHS(data) {
     const result = await lhsrun(data.Crawled_URL, data.Company_Name);
     console.log(result);
-  }
+}
 
-  async function mainfunction() {
+async function mainfunction() {
     arrayReport = []
-    for (let i = 0; i <= (raw_data.length-1); i++) {
+    for (let i = 0; i <= (raw_data.length - 1); i++) {
         if ((!raw_data[i].Company_Name) && (!raw_data[i].Crawled_URL)) { console.log("\n"); continue; }
-        (raw_data[i].Crawled_URL) ? await displayLHS(raw_data[i]) : console.log(raw_data[i].Company_Name+"##No Crawled_URL");
+        (raw_data[i].Crawled_URL) ? await displayLHS(raw_data[i]) : console.log(raw_data[i].Company_Name + "##No Crawled_URL");
     }
 }
 
@@ -118,13 +119,23 @@ async function crawling(baseURL) {
         if (!urlPattern.test(url)) {
             url = 'https://' + url;
         }
-  
+
         targetUrl = url;
         inputObject = new inputObj('AMS', url);
         raw_data.push(inputObject);
     });
     console.log("Fetching the Performance Scores for the URL's from Google Crawler . . . ");
     mainfunction();
+}
+
+async function checking404(baseURL) {
+    console.log(`Checking for 404's ${baseURL}`);
+    await checkPage404(baseURL);
+    const brokenLinks = returnbrokenLinksURLs404();
+    printBrokenLinks(brokenLinks);
+    // printReport(pages);
+    // const brokenLinks = returnbrokenLinksURLs404();
+    // printBrokenLinks(brokenLinks);
 }
 
 
@@ -155,15 +166,15 @@ async function main() {
                 else {
                     newBaseURL = baseURL.slice(0, -1);
                 }
-              }
-              else {
+            }
+            else {
                 if (!baseURL.includes('//www')) {
                     newBaseURL = baseURL.replace('//', '//www.');
                 }
                 else {
                     newBaseURL = baseURL
                 }
-              }
+            }
             const robotsURL = new URL('/robots.txt', newBaseURL);
             console.log(robotsURL);
             resp = await fetch(robotsURL);
@@ -191,7 +202,7 @@ async function main() {
                 if (!urlPattern.test(url)) {
                     url = 'https://' + url;
                 }
-          
+
                 targetUrl = url;
                 inputObject = new inputObj('AMS', url);
                 raw_data.push(inputObject);
@@ -205,10 +216,12 @@ async function main() {
             console.log(sitemapFile);
             const u = await loadSitemap(sitemapFile, newBaseURL, newBaseURL);
             console.log(u);
-            console.log("Total No. of URL's in the Sitemap: " + u.length);  
+            console.log("Total No. of URL's in the Sitemap: " + u.length);
         }
-    } else {
+    } else if (ask === "g") {
         await crawling(baseURL);
+    } else if (ask === "g404") {
+        await checking404(baseURL);
     }
 }
 
