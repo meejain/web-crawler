@@ -7,7 +7,6 @@ var pattern2 = /^(www.)/;
 
 
 async function checkPage404(baseURL) {
-    console.log(`Checking for 404's ${baseURL}`);
     const resp = await fetch(baseURL);
     const htmlBody = await resp.text();
     var nextURLs = getURLsfromHTML(htmlBody, baseURL);
