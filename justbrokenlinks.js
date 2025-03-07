@@ -23,6 +23,35 @@ async function checkPage404(baseURL) {
     }
 }
 
+async function checkClark404(baseURL) {
+    let correctString2 = '';
+    if (baseURL.slice(-1) === '/') {
+        console.log(`${baseURL}#`);
+    } else {
+        const myArray = baseURL.split("/");
+        //length of array
+        const arrayLength = myArray.length;
+        const lastString = myArray[arrayLength-1];
+        if (lastString.includes('-php')) {
+            correctString2 = (normalizePHPstring(lastString));
+        } else {
+            correctString2 = (normalizeClarkString(lastString));
+        }
+        myArray[arrayLength-1] = correctString2;
+        const newBaseURL = myArray.join("/");
+        try {
+            const resp = await fetch(newBaseURL);
+            if (resp.status == 404) {
+                console.log(`${baseURL}#`);
+            } else {
+                console.log(`${baseURL}#${newBaseURL}`);
+            }
+        } catch (err) {
+            console.log(`Error with ${nextURL} - - - > ${err.message}`);
+        }
+    }
+}
+
 function getURLsfromHTML(htmlBody, baseURL) {
     var newBaseURL = null;
     const urls = [];
@@ -82,6 +111,15 @@ function getURLsfromHTML(htmlBody, baseURL) {
     return [...new Set(urls)];
 }
 
+function normalizePHPstring(str) {
+    return str.split("-php")[0];
+}
+
+function normalizeClarkString(str) {
+    //concat the string with a / 
+    return str.toLowerCase().replace(/-/g, '_')+ '/';
+  }
+
 function normalizeURL(urlString) {
   const urlObj = new URL(urlString);
   const hostPath = `${urlObj.hostname}${urlObj.pathname}`
@@ -99,5 +137,6 @@ module.exports = {
     normalizeURL,
     getURLsfromHTML,
     returnbrokenLinksURLs404,
-    checkPage404
+    checkPage404,
+    checkClark404
 }

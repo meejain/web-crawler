@@ -1,5 +1,5 @@
 const { crawlPage, returnbrokenLinksURLs } = require('./crawl.js');
-const { checkPage404, returnbrokenLinksURLs404 } = require('./justbrokenlinks.js');
+const { checkPage404, returnbrokenLinksURLs404, checkClark404 } = require('./justbrokenlinks.js');
 const { loadURLsFromRobots, loadSitemap } = require('./sitemap.js');
 const { printReport, printBrokenLinks } = require('./report.js');
 
@@ -130,9 +130,18 @@ async function crawling(baseURL) {
 
 async function checking404(baseURL) {
     console.log(`Checking for 404's ${baseURL}`);
-    await checkPage404(baseURL);
+    await checkClark404(baseURL);
     const brokenLinks = returnbrokenLinksURLs404();
     printBrokenLinks(brokenLinks);
+    // printReport(pages);
+    // const brokenLinks = returnbrokenLinksURLs404();
+    // printBrokenLinks(brokenLinks);
+}
+
+async function checkingClark404(baseURL) {
+    await checkClark404(baseURL);
+    // const brokenLinks = returnbrokenLinksURLs404();
+    // printBrokenLinks(brokenLinks);
     // printReport(pages);
     // const brokenLinks = returnbrokenLinksURLs404();
     // printBrokenLinks(brokenLinks);
@@ -222,6 +231,9 @@ async function main() {
         await crawling(baseURL);
     } else if (ask === "g404") {
         await checking404(baseURL);
+    } else if (ask === "clark404") 
+    {
+        await checkingClark404(baseURL);
     }
 }
 
