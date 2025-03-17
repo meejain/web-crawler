@@ -23,6 +23,21 @@ async function checkPage404(baseURL) {
     }
 }
 
+async function checkClark404v1(baseURL) {
+    try {
+        const resp = await fetch(baseURL);
+        if (resp.status == 404) {
+            console.log(`${baseURL}#`);
+        } else {
+            console.log(`${baseURL}#${baseURL}`);
+        }
+    } catch (err) {
+        console.log(`Error with ${baseURL} - - - > ${err.message}`);
+    }
+}
+
+
+
 async function checkClark404(baseURL) {
     let correctString2 = '';
     if (baseURL.slice(-1) === '/') {
@@ -138,5 +153,6 @@ module.exports = {
     getURLsfromHTML,
     returnbrokenLinksURLs404,
     checkPage404,
-    checkClark404
+    checkClark404,
+    checkClark404v1
 }
