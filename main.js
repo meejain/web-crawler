@@ -1,5 +1,5 @@
 const { crawlPage, returnbrokenLinksURLs } = require('./crawl.js');
-const { checkPage404, returnbrokenLinksURLs404, checkClark404, checkClark404v1 } = require('./justbrokenlinks.js');
+const { checkPage404, returnbrokenLinksURLs404, checkClark404, checkClark404v1, checkurlshp } = require('./justbrokenlinks.js');
 const { loadURLsFromRobots, loadSitemap } = require('./sitemap.js');
 const { printReport, printBrokenLinks } = require('./report.js');
 
@@ -237,6 +237,8 @@ async function main() {
     } else if (ask === "clark404v1") 
     {
         await checkClark404v1(baseURL);
+    } else if (ask === "checkurlshp") {
+        await checkurlshp(baseURL);
     }
 }
 
