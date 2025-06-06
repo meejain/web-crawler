@@ -88,7 +88,7 @@ function getURLsfromHTMLhp(htmlBody, baseURL) {
 
 
 
-async function checkPage404(baseURL) {
+async function checkClark404(baseURL) {
     const resp = await fetch(baseURL);
     const htmlBody = await resp.text();
     var nextURLs = getURLsfromHTML(htmlBody, baseURL);
@@ -96,7 +96,6 @@ async function checkPage404(baseURL) {
         try {
             const resp = await fetch(nextURL);
             if (resp.status == 404) {
-                console.log("Here is the 404 url" + nextURL);
                 brokenLinksURLs.push(`${baseURL}#${nextURL}#${resp.status}`);
             }
         } catch (err) {
@@ -120,34 +119,34 @@ async function checkClark404v1(baseURL) {
 
 
 
-async function checkClark404(baseURL) {
-    let correctString2 = '';
-    if (baseURL.slice(-1) === '/') {
-        console.log(`${baseURL}#`);
-    } else {
-        const myArray = baseURL.split("/");
-        //length of array
-        const arrayLength = myArray.length;
-        const lastString = myArray[arrayLength-1];
-        if (lastString.includes('-php')) {
-            correctString2 = (normalizePHPstring(lastString));
-        } else {
-            correctString2 = (normalizeClarkString(lastString));
-        }
-        myArray[arrayLength-1] = correctString2;
-        const newBaseURL = myArray.join("/");
-        try {
-            const resp = await fetch(newBaseURL);
-            if (resp.status == 404) {
-                console.log(`${baseURL}#`);
-            } else {
-                console.log(`${baseURL}#${newBaseURL}`);
-            }
-        } catch (err) {
-            console.log(`Error with ${nextURL} - - - > ${err.message}`);
-        }
-    }
-}
+// async function checkClark404(baseURL) {
+//     let correctString2 = '';
+//     if (baseURL.slice(-1) === '/') {
+//         console.log(`${baseURL}#`);
+//     } else {
+//         const myArray = baseURL.split("/");
+//         //length of array
+//         const arrayLength = myArray.length;
+//         const lastString = myArray[arrayLength-1];
+//         if (lastString.includes('-php')) {
+//             correctString2 = (normalizePHPstring(lastString));
+//         } else {
+//             correctString2 = (normalizeClarkString(lastString));
+//         }
+//         myArray[arrayLength-1] = correctString2;
+//         const newBaseURL = myArray.join("/");
+//         try {
+//             const resp = await fetch(newBaseURL);
+//             if (resp.status == 404) {
+//                 console.log(`${baseURL}#`);
+//             } else {
+//                 console.log(`${baseURL}#${newBaseURL}`);
+//             }
+//         } catch (err) {
+//             console.log(`Error with ${nextURL} - - - > ${err.message}`);
+//         }
+//     }
+// }
 
 function getURLsfromHTML(htmlBody, baseURL) {
     var newBaseURL = null;
@@ -168,7 +167,6 @@ function getURLsfromHTML(htmlBody, baseURL) {
             //relative path
             let url1 = new URL(baseURL);
             baseURL = `https://${url1.host}`;
-            console.log(baseURL);
             try {
                 if (baseURL.slice(-1) === '/') {
                     newBaseURL = baseURL.slice(0, -1);
@@ -234,7 +232,6 @@ module.exports = {
     normalizeURL,
     getURLsfromHTML,
     returnbrokenLinksURLs404,
-    checkPage404,
     checkClark404,
     checkClark404v1,
     checkurlshp
