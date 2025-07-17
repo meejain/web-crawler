@@ -17,6 +17,14 @@ function printBrokenLinks(brokenLinks) {
     console.log("========== End Broken Links ==========");
  }
 
+ function printRedirects(redirects) {
+    console.log("========== Redirects ==========");
+    for (const redirect of redirects) {
+        console.log(redirect);
+    }
+    console.log("========== End Redirects ==========");
+ }
+
 
 
 function sortPages(pages) {
@@ -30,5 +38,6 @@ function sortPages(pages) {
 module.exports = {  
     sortPages,
     printReport,
-    printBrokenLinks
+    printBrokenLinks,
+    printRedirects
  };

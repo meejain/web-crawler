@@ -1,7 +1,9 @@
 const { crawlPage, returnbrokenLinksURLs } = require('./crawl.js');
 const { checkPage404, returnbrokenLinksURLs404, checkClark404, checkClark404v1, checkurlshp } = require('./justbrokenlinks.js');
 const { loadURLsFromRobots, loadSitemap } = require('./sitemap.js');
-const { printReport, printBrokenLinks } = require('./report.js');
+const { printReport, printBrokenLinks, printRedirects } = require('./report.js');
+const fs = require('fs');
+const path = require('path');
 
 const crawlStatus = {
     crawled: 0,
@@ -9,6 +11,8 @@ const crawlStatus = {
     urls: [],
 };
 
+const redirectLinksURLs = [];
+const finalURLs = [];
 class inputObj {
     constructor(Company_Name, Crawled_URL) {
         this.Company_Name = Company_Name;
@@ -97,12 +101,88 @@ async function mainfunction() {
     }
 }
 
+function normalizeUrl(url) {
+    if (!/^https?:\/\//i.test(url)) {
+      return 'https://' + url;
+    }
+    return url;
+  }
+
+// Helper function to extract domain name from URL
+function extractDomain(url) {
+    try {
+        const urlObj = new URL(url);
+        return urlObj.hostname.replace(/^www\./, '');
+    } catch (error) {
+        // Fallback for invalid URLs
+        return url.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0];
+    }
+}
+
+// Helper function to save report data to file
+function saveReportToFile(domain, totalUrls, urls) {
+    try {
+        // Create crawler_reports directory if it doesn't exist
+        const reportsDir = path.join(process.cwd(), 'crawler_reports');
+        if (!fs.existsSync(reportsDir)) {
+            fs.mkdirSync(reportsDir, { recursive: true });
+        }
+
+        // Create filename with domain
+        const filename = `${domain}-report.txt`;
+        const filepath = path.join(reportsDir, filename);
+
+        // Prepare report content
+        const reportContent = [
+            `Sitemap Report for ${domain}`,
+            `Generated on: ${new Date().toISOString()}`,
+            `Total No. of URL's in the Sitemap: ${totalUrls}`,
+            '',
+            'URLs from Sitemap:',
+            ...urls.map(url => `- ${url}`)
+        ].join('\n');
+
+        // Write to file
+        fs.writeFileSync(filepath, reportContent, 'utf8');
+        console.log(`Report saved to: ${filepath}`);
+    } catch (error) {
+        console.error(`Error saving report to file: ${error.message}`);
+    }
+}
+
+async function getRedirectURLs(pages) {
+    console.log(pages);
+    for (const page of pages) {
+        const normalizedUrl = normalizeUrl(page[0]);
+        const res = await fetch(normalizedUrl, {
+            method: 'GET',
+            redirect: 'manual'
+        });
+        if (res.status >= 300 && res.status < 400) {
+            const redirectURL = res.headers.get('Location');
+            redirectLinksURLs.push(`${normalizedUrl}#${res.status}#${redirectURL}`);
+        } else {
+            finalURLs.push(page);
+        }
+    }
+    return finalURLs;
+}
+
 async function crawling(baseURL) {
     console.log(`Crawling ${baseURL}`);
     const pages = await crawlPage(baseURL, baseURL, baseURL, {});
-    printReport(pages);
+    const pageArray = Object.entries(pages);
+    const finalPages = await getRedirectURLs(pageArray);
+    console.log("========== Report ==========");
+    for (const finalPage of finalPages) {
+        const url = finalPage[0];
+        const hits = finalPage[1];
+        console.log(`${url}:${hits}`);
+    }
+    console.log("========== End Report ==========");
     const brokenLinks = returnbrokenLinksURLs();
     printBrokenLinks(brokenLinks);
+    printRedirects(redirectLinksURLs);
     const sortedPages = sortPages(pages);
     crawlStatus.urls = [];
     for (const sortedPage of sortedPages) {
@@ -196,6 +276,10 @@ async function main() {
             crawlStatus.urls = await loadURLsFromRobots(newBaseURL, newBaseURL);
             console.log(crawlStatus.urls);
             console.log("Total No. of URL's in the Sitemap: " + crawlStatus.urls.length);
+            
+            // Save report to file
+            const domain = extractDomain(newBaseURL);
+            saveReportToFile(domain, crawlStatus.urls.length, crawlStatus.urls);
 
             if (crawlStatus.urls.length === 0) {
                 console.log("Issue accessing sitemap, hence crawling the base URL");
@@ -226,6 +310,10 @@ async function main() {
             const u = await loadSitemap(sitemapFile, newBaseURL, newBaseURL);
             console.log(u);
             console.log("Total No. of URL's in the Sitemap: " + u.length);
+            
+            // Save report to file
+            const domain = extractDomain(newBaseURL);
+            saveReportToFile(domain, u.length, u);
         }
     } else if (ask === "g") {
         await crawling(baseURL);
