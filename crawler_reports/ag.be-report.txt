@@ -1,0 +1,7 @@
+Sitemap Report for ag.be
+Generated on: 2025-08-12T11:16:41.683Z
+Total No. of URL's in the Sitemap: 2
+
+URLs from Sitemap:
+- https://www.ag.be/content/hub.html
+- https://hub.adobe.aginsurance.be/

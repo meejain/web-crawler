@@ -270,7 +270,7 @@ async function main() {
         } catch (err) {
             console.log(`Error fetching ${newBaseURL}/robots.txt: ${err.message}`);
         }
-        if (resp.status === 200) {
+        if (resp && resp.status === 200) {
             console.log(`Found robots.txt for ${baseURL}, hence getting URL's from Sitemap`);
             crawlStatus.urls = [];
             crawlStatus.urls = await loadURLsFromRobots(newBaseURL, newBaseURL);
@@ -285,23 +285,6 @@ async function main() {
                 console.log("Issue accessing sitemap, hence crawling the base URL");
                 return;
             }
-
-            //Code below to get the LHS of the URL's from sitemap
-            raw_data = [];
-            targetUrl = '';
-
-            crawlStatus.urls.slice(0, 5).forEach((url) => {
-                const urlPattern = /^http/;
-                if (!urlPattern.test(url)) {
-                    url = 'https://' + url;
-                }
-
-                targetUrl = url;
-                inputObject = new inputObj('AMS', url);
-                raw_data.push(inputObject);
-            });
-            console.log("Fetching the Performance Scores for the URL's from sitemap . . . ");
-            mainfunction();
         } else {
             console.log("Issue accessing robots.txt, hence trying SiteMap directly ...");
             var smURL = new URL(`/sitemap.xml`, newBaseURL);
