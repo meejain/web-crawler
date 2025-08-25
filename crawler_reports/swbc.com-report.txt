@@ -1,6 +1,6 @@
 Sitemap Report for swbc.com
-Generated on: 2025-08-07T13:28:08.013Z
-Total No. of URL's in the Sitemap: 114
+Generated on: 2025-08-25T14:27:46.546Z
+Total No. of URL's in the Sitemap: 113
 
 URLs from Sitemap:
 - https://www.swbc.com/
@@ -8,7 +8,6 @@ URLs from Sitemap:
 - https://www.swbc.com/resources
 - https://www.swbc.com/licenses-disclosures
 - https://www.swbc.com/investment-disclosure
-- https://www.swbc.com/instructions-for-submitting-a-verifiable-request-to-know-correct-or-delete-personal-information
 - https://www.swbc.com/nmls-consumer-access
 - https://www.swbc.com/search
 - https://www.swbc.com/404-error-page
