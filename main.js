@@ -72,34 +72,36 @@ async function fetchURL(url) {
 }
 
 
-async function lhsrun(site, customer) {
-    const terms = [".json", "?", "granite/core", "404.html", "healthcheck", "jpg", "css", "svg", "*"];
-    const result1 = terms.some(term => site.includes(term));
-    if (result1) { console.log(customer + "#" + site + "#" + "We need a different URL"); }
-    else {
-        const conditions = ["Unable to process request"];
-        const urlMobile = setUpQueryMobile(site);
-        const urlDesktop = setUpQueryDesktop(site);
-        const responseMobile = await fetchURL(urlMobile);
-        const responseDesktop = await fetchURL(urlDesktop);
-        // (responseMobile.error) ? ((conditions.some(el => responseMobile.error.message.includes(el))) ? lhsrun(site, customer) : console.log(customer + "#" + site + "#" + " LHS is erroring with " + responseMobile.error.message)) : console.log(customer + "#" + site + "#" + (Math.round(responseMobile.lighthouseResult.categories.performance.score * 100) + "%") + "#" + (Math.round(responseDesktop.lighthouseResult.categories.performance.score * 100) + "%"));
-        const result = (responseMobile.error) ? ((conditions.some(el => responseMobile.error.message.includes(el))) ? lhsrun(site, customer) : (customer + "#" + site + "#" + " LHS is erroring with " + responseMobile.error.message)) : (customer + "#" + site + "#" + (Math.round(responseMobile.lighthouseResult.categories.performance.score * 100)) + "#" + (Math.round(responseDesktop.lighthouseResult.categories.performance.score * 100)));
-        return result;
-    }
-}
+// DISABLED: Performance scoring function causes hanging
+// async function lhsrun(site, customer) {
+//     const terms = [".json", "?", "granite/core", "404.html", "healthcheck", "jpg", "css", "svg", "*"];
+//     const result1 = terms.some(term => site.includes(term));
+//     if (result1) { console.log(customer + "#" + site + "#" + "We need a different URL"); }
+//     else {
+//         const conditions = ["Unable to process request"];
+//         const urlMobile = setUpQueryMobile(site);
+//         const urlDesktop = setUpQueryDesktop(site);
+//         const responseMobile = await fetchURL(urlMobile);
+//         const responseDesktop = await fetchURL(urlDesktop);
+//         // (responseMobile.error) ? ((conditions.some(el => responseMobile.error.message.includes(el))) ? lhsrun(site, customer) : console.log(customer + "#" + site + "#" + " LHS is erroring with " + responseMobile.error.message)) : console.log(customer + "#" + site + "#" + (Math.round(responseMobile.lighthouseResult.categories.performance.score * 100) + "%") + "#" + (Math.round(responseDesktop.lighthouseResult.categories.performance.score * 100) + "%"));
+//         const result = (responseMobile.error) ? ((conditions.some(el => responseMobile.error.message.includes(el))) ? lhsrun(site, customer) : (customer + "#" + site + "#" + " LHS is erroring with " + responseMobile.error.message)) : (customer + "#" + site + "#" + (Math.round(responseMobile.lighthouseResult.categories.performance.score * 100)) + "#" + (Math.round(responseDesktop.lighthouseResult.categories.performance.score * 100)));
+//         return result;
+//     }
+// }
 
-async function displayLHS(data) {
-    const result = await lhsrun(data.Crawled_URL, data.Company_Name);
-    console.log(result);
-}
+// DISABLED: Performance scoring functions cause hanging
+// async function displayLHS(data) {
+//     const result = await lhsrun(data.Crawled_URL, data.Company_Name);
+//     console.log(result);
+// }
 
-async function mainfunction() {
-    arrayReport = []
-    for (let i = 0; i <= (raw_data.length - 1); i++) {
-        if ((!raw_data[i].Company_Name) && (!raw_data[i].Crawled_URL)) { console.log("\n"); continue; }
-        (raw_data[i].Crawled_URL) ? await displayLHS(raw_data[i]) : console.log(raw_data[i].Company_Name + "##No Crawled_URL");
-    }
-}
+// async function mainfunction() {
+//     arrayReport = []
+//     for (let i = 0; i <= (raw_data.length - 1); i++) {
+//         if ((!raw_data[i].Company_Name) && (!raw_data[i].Crawled_URL)) { console.log("\n"); continue; }
+//         (raw_data[i].Crawled_URL) ? await displayLHS(raw_data[i]) : console.log(raw_data[i].Company_Name + "##No Crawled_URL");
+//     }
+// }
 
 function normalizeUrl(url) {
     if (!/^https?:\/\//i.test(url)) {
@@ -190,22 +192,9 @@ async function crawling(baseURL) {
         crawlStatus.urls.push(url);
     }
 
-    //Code below to get the LHS of the URL's from Google Crawler
-    raw_data = [];
-    targetUrl = '';
-
-    crawlStatus.urls.slice(0, 5).forEach((url) => {
-        const urlPattern = /^http/;
-        if (!urlPattern.test(url)) {
-            url = 'https://' + url;
-        }
-
-        targetUrl = url;
-        inputObject = new inputObj('AMS', url);
-        raw_data.push(inputObject);
-    });
-    console.log("Fetching the Performance Scores for the URL's from Google Crawler . . . ");
-    mainfunction();
+    // Performance scoring completely removed
+    console.log("Google crawling completed. Performance scoring disabled.");
+    console.log(`Total No. of URL's found: ${crawlStatus.urls.length}`);
 }
 
 async function checking404(baseURL) {
@@ -313,4 +302,10 @@ async function main() {
     }
 }
 
-main();
+main().then(() => {
+    console.log("✅ Main process completed, forcing exit...");
+    process.exit(0);
+}).catch((error) => {
+    console.error("❌ Main process error:", error);
+    process.exit(1);
+});
