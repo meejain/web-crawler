@@ -135,7 +135,8 @@ function isSubdomain(url) {
     }
 }
 
-// Function to run Google crawl with real-time console output
+// Function to run Google crawl with real-time console output - COMMENTED OUT FOR SITEMAP-ONLY MODE
+/*
 function runGoogleCrawlWithLogs(url) {
     return new Promise((resolve, reject) => {
         console.log(`   🚀 Spawning: npm start ${url} g`);
@@ -190,6 +191,7 @@ function runGoogleCrawlWithLogs(url) {
         });
     });
 }
+*/
 
 // Function to get URLs from sitemap and filter by target domain
 async function getSitemapURLsWithFiltering(baseURL, targetDomain) {
@@ -343,12 +345,12 @@ async function getSitemapURLsWithFiltering(baseURL, targetDomain) {
     }
 }
 
-console.log(`🚀 STARTING COMPREHENSIVE ANALYSIS FOR ${customers.length} SPECIFIED CUSTOMERS`);
+console.log(`🚀 STARTING SITEMAP-ONLY ANALYSIS FOR ${customers.length} SPECIFIED CUSTOMERS`);
 console.log(`📋 Each customer will undergo:`);
 console.log(`   1. Sitemap analysis (with smart domain fallback)`);
 console.log(`   2. URL filtering (target-specific vs global pages)`);
-console.log(`   3. Mandatory Google crawl simulation`);
-console.log(`   4. Comprehensive comparison reporting`);
+console.log(`   3. Comprehensive sitemap reporting`);
+console.log(`   ⚠️  Google crawl is DISABLED in sitemap-only mode`);
 console.log(`${'='.repeat(80)}\n`);
 
 (async () => {
@@ -391,6 +393,23 @@ for (let i = 0; i < customers.length; i++) {
         console.log(`❌ Sitemap error: ${error.message} (attempting fallback)`);
     }
     
+    // Google crawl fallback COMMENTED OUT FOR SITEMAP-ONLY MODE
+    if (!finalResult) {
+        console.log(`\n❌ Sitemap failed - no fallback to Google crawl in sitemap-only mode`);
+        finalResult = {
+            customerName: customer.customerName,
+            originalUrl: customer.url,
+            crawledUrl: currentUrl,
+            method: 'sitemap_failed',
+            totalPages: 'NA',
+            filteredPages: 'NA',
+            targetHostname: new URL(customer.url).hostname,
+            sampleUrls: [],
+            filteredSampleUrls: []
+        };
+    }
+    
+    /*
     // If sitemap failed, start Google crawl directly  
     if (!finalResult) {
         attemptCount++;
@@ -463,7 +482,19 @@ for (let i = 0; i < customers.length; i++) {
             };
         }
     }
+    */
     
+    // Mandatory Google crawl COMMENTED OUT FOR SITEMAP-ONLY MODE
+    console.log(`\n🔍 Skipping Google crawl in sitemap-only mode`);
+    
+    let googleCrawlResult = {
+        url: customer.url,
+        method: 'google_disabled',
+        pageCount: 'N/A - Google crawl disabled',
+        success: false
+    };
+    
+    /*
     // Mandatory Google crawl of original URL (always runs regardless of sitemap success)
     console.log(`\n🔍 MANDATORY: Google crawl for original URL: ${customer.url}`);
     console.log(`🚀 Starting Google crawl - this will take a while...`);
@@ -527,6 +558,7 @@ for (let i = 0; i < customers.length; i++) {
             success: false
         };
     }
+    */
     
     // Combine sitemap and Google crawl results
     const combinedResult = {
@@ -551,9 +583,9 @@ for (let i = 0; i < customers.length; i++) {
     };
     
     results.push(combinedResult);
-    console.log(`\n📊 COMBINED RESULTS:`);
+    console.log(`\n📊 SITEMAP RESULTS:`);
     console.log(`   Sitemap: ${finalResult.totalPages} total pages (${finalResult.filteredPages} matching target) via ${finalResult.method} on ${finalResult.crawledUrl}`);
-    console.log(`   Google Crawl: ${googleCrawlResult.pageCount} pages via direct crawl on ${googleCrawlResult.url}`);
+    console.log(`   Google Crawl: Disabled in sitemap-only mode`);
     console.log(`\n⏱️  Progress: ${i + 1}/${customers.length} customers completed (${Math.round((i + 1) / customers.length * 100)}%)`);
     console.log(''); // Empty line for readability
     
@@ -561,25 +593,22 @@ for (let i = 0; i < customers.length; i++) {
     await new Promise(resolve => setTimeout(resolve, 100));
 }
 
-console.log('=== TEST COMPLETE ===');
+console.log('=== SITEMAP-ONLY ANALYSIS COMPLETE ===');
 console.log(`Processed: ${results.length} customers`);
 
 // Print summary
 const sitemapSuccessful = results.filter(r => r.sitemap.success).length;
 const sitemapFailed = results.filter(r => !r.sitemap.success).length;
-const googleSuccessful = results.filter(r => r.googleCrawl.success).length;
-const googleFailed = results.filter(r => !r.googleCrawl.success).length;
 const sitemapOnlySuccess = results.filter(r => r.sitemap.method === 'sitemap').length;
 
-console.log(`📊 SUMMARY:`);
+console.log(`📊 SITEMAP-ONLY SUMMARY:`);
 console.log(`✅ Sitemap successful: ${sitemapSuccessful}/${results.length}`);
 console.log(`❌ Sitemap failed: ${sitemapFailed}/${results.length}`);
-console.log(`✅ Google crawl successful: ${googleSuccessful}/${results.length}`);
-console.log(`❌ Google crawl failed: ${googleFailed}/${results.length}`);
+console.log(`⚠️  Google crawl: Disabled in sitemap-only mode`);
 console.log(`📋 Sitemap method breakdown:`);
 console.log(`   - Sitemap found: ${sitemapOnlySuccess}`);
-console.log(`   - Fallback to Google: ${results.filter(r => r.sitemap.method === 'google').length}`);
-console.log(`   - Total failed: ${results.filter(r => r.sitemap.method === 'failed').length}`);
+console.log(`   - Sitemap failed: ${results.filter(r => r.sitemap.method === 'sitemap_failed').length}`);
+console.log(`   - Total failed: ${results.filter(r => r.sitemap.method === 'failed' || r.sitemap.method === 'sitemap_failed').length}`);
 
 console.log(`\n=== DETAILED RESULTS FOR ALL ${results.length} CUSTOMERS ===`);
 results.forEach((result, index) => {
@@ -612,28 +641,22 @@ results.forEach((result, index) => {
         });
     }
     
-    // Google Crawl Results
-    console.log(`\n   🔍 GOOGLE CRAWL RESULTS (Original URL):`);
-    console.log(`      Crawled URL: ${result.googleCrawl.url}`);
-    console.log(`      Method: ${result.googleCrawl.method}`);
-    console.log(`      Success: ${result.googleCrawl.success ? '✅' : '❌'}`);
+    // Google Crawl Results (Disabled)
+    console.log(`\n   🔍 GOOGLE CRAWL RESULTS:`);
+    console.log(`      Status: ${result.googleCrawl.method} (disabled in sitemap-only mode)`);
     console.log(`      Pages found: ${result.googleCrawl.pageCount}`);
-    if (result.googleCrawl.error) {
-        console.log(`      Error: ${result.googleCrawl.error}`);
-    }
     
-    // Comparison
-    console.log(`\n   ⚖️  COMPARISON:`);
-    if (result.sitemap.success && result.googleCrawl.success) {
-        console.log(`      Sitemap (${result.sitemap.crawledUrl}): ${result.sitemap.totalPages} pages`);
-        console.log(`      Google crawl (${result.googleCrawl.url}): ${result.googleCrawl.pageCount} pages`);
-        console.log(`      Target-specific (sitemap filtered): ${result.sitemap.filteredPages} pages`);
-    } else if (result.sitemap.success) {
-        console.log(`      Only sitemap successful: ${result.sitemap.totalPages} pages (${result.sitemap.filteredPages} target-specific)`);
-    } else if (result.googleCrawl.success) {
-        console.log(`      Only Google crawl successful: ${result.googleCrawl.pageCount} pages`);
+    // Analysis Summary
+    console.log(`\n   📊 SITEMAP ANALYSIS SUMMARY:`);
+    if (result.sitemap.success) {
+        console.log(`      ✅ Sitemap analysis successful`);
+        console.log(`      📄 Total pages found: ${result.sitemap.totalPages}`);
+        console.log(`      🎯 Target-specific pages: ${result.sitemap.filteredPages}`);
+        console.log(`      🔗 Source: ${result.sitemap.crawledUrl}`);
     } else {
-        console.log(`      Both methods failed`);
+        console.log(`      ❌ Sitemap analysis failed`);
+        console.log(`      📄 No pages found via sitemap`);
+        console.log(`      💡 Consider manual verification or alternative discovery methods`);
     }
 });
 
@@ -650,15 +673,13 @@ const excelData = results.map(result => ({
     sitemapFilteredPages: result.sitemap.filteredPages,
     sitemapSource: result.sitemap.sitemapSource || 'N/A',
     sitemapSuccess: result.sitemap.success ? 'Yes' : 'No',
-    googleCrawlPages: result.googleCrawl.pageCount,
-    googleCrawlSuccess: result.googleCrawl.success ? 'Yes' : 'No',
+    sitemapMethod: result.sitemap.method,
     targetHostname: result.sitemap.targetHostname,
     crawledUrl: result.sitemap.crawledUrl,
-    comparison: result.sitemap.success && result.googleCrawl.success ? 
-        `Sitemap: ${result.sitemap.totalPages}, Google: ${result.googleCrawl.pageCount}` :
-        result.sitemap.success ? `Sitemap only: ${result.sitemap.totalPages}` :
-        result.googleCrawl.success ? `Google only: ${result.googleCrawl.pageCount}` :
-        'Both failed'
+    googleCrawlStatus: 'Disabled (Sitemap-only mode)',
+    analysisResult: result.sitemap.success ? 
+        `Sitemap: ${result.sitemap.totalPages} pages (${result.sitemap.filteredPages} target-specific)` :
+        'Sitemap analysis failed'
 }));
 
 // Create Excel workbook
@@ -666,7 +687,7 @@ const workbook = XLSX.utils.book_new();
 
 // Main data worksheet
 const worksheetData = [
-    ['Customer Name', 'Original URL', 'Target Hostname', 'Sitemap Total Pages', 'Sitemap Filtered Pages', 'Sitemap Source', 'Sitemap Success', 'Google Crawl Pages', 'Google Success', 'Comparison'],
+    ['Customer Name', 'Original URL', 'Target Hostname', 'Sitemap Total Pages', 'Sitemap Filtered Pages', 'Sitemap Source', 'Sitemap Success', 'Sitemap Method', 'Google Crawl Status', 'Analysis Result'],
     ...excelData.map(row => [
         row.customerName,
         row.originalUrl,
@@ -675,9 +696,9 @@ const worksheetData = [
         row.sitemapFilteredPages,
         row.sitemapSource,
         row.sitemapSuccess,
-        row.googleCrawlPages,
-        row.googleCrawlSuccess,
-        row.comparison
+        row.sitemapMethod,
+        row.googleCrawlStatus,
+        row.analysisResult
     ])
 ];
 
@@ -692,9 +713,9 @@ worksheet['!cols'] = [
     { wch: 20 }, // Sitemap Filtered Pages
     { wch: 30 }, // Sitemap Source
     { wch: 15 }, // Sitemap Success
-    { wch: 20 }, // Google Crawl Pages
-    { wch: 15 }, // Google Success
-    { wch: 40 }  // Comparison
+    { wch: 20 }, // Sitemap Method
+    { wch: 25 }, // Google Crawl Status
+    { wch: 50 }  // Analysis Result
 ];
 
 // Style header row
@@ -717,9 +738,10 @@ XLSX.utils.book_append_sheet(workbook, worksheet, 'Analysis Results');
 // Summary worksheet
 const totalCustomers = results.length;
 const sitemapSuccessCount = results.filter(r => r.sitemap.success).length;
-const googleSuccessCount = results.filter(r => r.googleCrawl.success).length;
 const totalSitemapPages = results.filter(r => r.sitemap.success && r.sitemap.totalPages !== 'NA')
     .reduce((sum, r) => sum + (parseInt(r.sitemap.totalPages) || 0), 0);
+const totalFilteredPages = results.filter(r => r.sitemap.success && r.sitemap.filteredPages !== 'NA')
+    .reduce((sum, r) => sum + (parseInt(r.sitemap.filteredPages) || 0), 0);
 
 // Top 10 by sitemap pages
 const topSites = results
@@ -728,21 +750,23 @@ const topSites = results
     .slice(0, 10);
 
 const summaryData = [
-    ['🚀 Comprehensive Analysis Summary'],
+    ['🚀 Sitemap-Only Analysis Summary'],
     [''],
     ['📊 Overall Statistics'],
     ['Total Customers Analyzed', totalCustomers],
     ['Sitemap Analysis Success', `${sitemapSuccessCount}/${totalCustomers} (${Math.round(sitemapSuccessCount/totalCustomers*100)}%)`],
-    ['Google Crawl Success', `${googleSuccessCount}/${totalCustomers} (${Math.round(googleSuccessCount/totalCustomers*100)}%)`],
+    ['Google Crawl Status', 'Disabled (Sitemap-only mode)'],
     ['Total Pages Found (Sitemap)', totalSitemapPages.toLocaleString()],
-    ['Average Pages per Customer', Math.round(totalSitemapPages/sitemapSuccessCount).toLocaleString()],
+    ['Total Target-Specific Pages', totalFilteredPages.toLocaleString()],
+    ['Average Pages per Customer', sitemapSuccessCount > 0 ? Math.round(totalSitemapPages/sitemapSuccessCount).toLocaleString() : '0'],
     [''],
     ['🏆 Top 10 Sites by Sitemap Pages'],
-    ['Rank', 'Customer Name', 'Pages', 'URL'],
+    ['Rank', 'Customer Name', 'Total Pages', 'Target Pages', 'URL'],
     ...topSites.map((site, index) => [
         index + 1,
         site.customerName,
         (parseInt(site.sitemap.totalPages) || 0).toLocaleString(),
+        (parseInt(site.sitemap.filteredPages) || 0).toLocaleString(),
         site.originalUrl
     ])
 ];
@@ -753,7 +777,8 @@ const summaryWorksheet = XLSX.utils.aoa_to_sheet(summaryData);
 summaryWorksheet['!cols'] = [
     { wch: 15 }, // Rank/Label
     { wch: 50 }, // Customer Name/Description
-    { wch: 20 }, // Pages/Value
+    { wch: 20 }, // Total Pages/Value
+    { wch: 20 }, // Target Pages
     { wch: 60 }  // URL
 ];
 
@@ -777,7 +802,7 @@ if (summaryWorksheet['A1']) {
 });
 
 // Style top 10 headers
-['A11', 'B11', 'C11', 'D11'].forEach(cell => {
+['A11', 'B11', 'C11', 'D11', 'E11'].forEach(cell => {
     if (summaryWorksheet[cell]) {
         summaryWorksheet[cell].s = headerStyle;
     }
@@ -787,29 +812,30 @@ XLSX.utils.book_append_sheet(workbook, summaryWorksheet, 'Summary');
 
 // Write Excel file
 const timestamp = new Date().toISOString().replace(/[:.]/g, '-').split('T')[0];
-const filename = `./comprehensive_analysis_${timestamp}.xlsx`;
+const filename = `./sitemap_only_analysis_${timestamp}.xlsx`;
 XLSX.writeFile(workbook, filename);
 
-console.log('\n✅ EXCEL REPORT GENERATED SUCCESSFULLY!');
+console.log('\n✅ SITEMAP-ONLY EXCEL REPORT GENERATED SUCCESSFULLY!');
 console.log(`📁 File: ${filename}`);
 console.log(`📊 Total customers: ${totalCustomers}`);
 console.log(`✅ Sitemap successful: ${sitemapSuccessCount}`);
-console.log(`✅ Google crawl successful: ${googleSuccessCount}`);
+console.log(`⚠️  Google crawl: Disabled (sitemap-only mode)`);
 console.log(`📄 Total sitemap pages: ${totalSitemapPages.toLocaleString()}`);
+console.log(`🎯 Total target-specific pages: ${totalFilteredPages.toLocaleString()}`);
 
 if (topSites.length > 0) {
     console.log('\n🏆 TOP 5 SITES BY SITEMAP PAGES:');
     topSites.slice(0, 5).forEach((site, index) => {
-        console.log(`${index + 1}. ${site.customerName}: ${(parseInt(site.sitemap.totalPages) || 0).toLocaleString()} pages`);
+        console.log(`${index + 1}. ${site.customerName}: ${(parseInt(site.sitemap.totalPages) || 0).toLocaleString()} total (${(parseInt(site.sitemap.filteredPages) || 0).toLocaleString()} target-specific)`);
     });
 }
 
 console.log('\n📋 Excel file contains:');
-console.log('  • "Analysis Results" sheet: Complete data for all customers');
-console.log('  • "Summary" sheet: Statistics and top performers');
-console.log('💡 Open the Excel file to view detailed results!');
+console.log('  • "Analysis Results" sheet: Complete sitemap data for all customers');
+console.log('  • "Summary" sheet: Statistics and top performers (sitemap-only)');
+console.log('💡 Open the Excel file to view detailed sitemap analysis results!');
 
-console.log('\n🎯 TEST COMPLETED SUCCESSFULLY - EXITING...');
+console.log('\n🎯 SITEMAP-ONLY ANALYSIS COMPLETED SUCCESSFULLY - EXITING...');
 
 // Force exit to prevent hanging
 process.exit(0);
