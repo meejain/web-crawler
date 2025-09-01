@@ -2,20 +2,19 @@ const { JSDOM } = require('jsdom');
 
 async function loadSitemap(sitemapURL, origin, host, config = {}) {
     var resp = null;
-    var newOrigin = null;
-    const url = new URL(sitemapURL, origin);
-    if (!url.searchParams.get('host')) {
-      url.searchParams.append('host', host);
-    }
-    if (origin.slice(-1) === '/') {
-      newOrigin = origin.slice(0, -1);
-    } else {
-      newOrigin = origin;
-    }
-    resp = await fetch(`${newOrigin}${url.pathname}${url.search}`);
-    if (resp.status !== 200) {
-      resp = await fetch(`${newOrigin}${url.pathname}`);
-    }
+    const fetchOptions = {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'application/xml, text/xml, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive'
+      },
+      // Ignore SSL certificate errors for development
+      agent: process.env.NODE_TLS_REJECT_UNAUTHORIZED === '0' ? undefined : undefined
+    };
+    
+    resp = await fetch(sitemapURL, fetchOptions);
     if (resp.ok) {
       if (config.log) {
         config.log(`Extracting URLs from sitemap: ${sitemapURL}`);
@@ -56,8 +55,17 @@ async function loadSitemap(sitemapURL, origin, host, config = {}) {
   
   async function loadURLsFromRobots(origin, host, config = {}) {
     let urls = [];
-    const url = new URL(`/robots.txt?host=${host}`, origin);
-    const res = await fetch(url.toString());
+    const url = new URL(`/robots.txt`, origin);
+    const fetchOptions = {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/plain, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive'
+      }
+    };
+    const res = await fetch(url.toString(), fetchOptions);
     if (res.ok) {
       if (config.log) {
         config.log('Found a robots.txt');
