@@ -1,0 +1,35 @@
+Sitemap Report for aemshop.net
+Generated on: 2025-09-01T12:16:51.738Z
+Total No. of URL's in the Sitemap: 30
+
+URLs from Sitemap:
+- https://www.aemshop.net/mini-cart
+- https://www.aemshop.net/empty-cart
+- https://www.aemshop.net/
+- https://www.aemshop.net/apparel
+- https://www.aemshop.net/enrichment/product-banner
+- https://www.aemshop.net/enrichment/category-banner
+- https://www.aemshop.net/products/default
+- https://www.aemshop.net/privacy-policy
+- https://www.aemshop.net/support
+- https://www.aemshop.net/.da/library/blocks/accordion
+- https://www.aemshop.net/.da/library/blocks/cards
+- https://www.aemshop.net/.da/library/blocks/columns
+- https://www.aemshop.net/.da/library/blocks/fragment
+- https://www.aemshop.net/.da/library/blocks/hero
+- https://www.aemshop.net/.da/library/blocks/metadata
+- https://www.aemshop.net/.da/library/blocks/section-metadata
+- https://www.aemshop.net/fr/gear
+- https://www.aemshop.net/fr/privacy-policy
+- https://www.aemshop.net/fr/enrichment/category-banner
+- https://www.aemshop.net/fr/empty-cart
+- https://www.aemshop.net/fr/apparel
+- https://www.aemshop.net/fr/support
+- https://www.aemshop.net/fr/mini-cart
+- https://www.aemshop.net/fr/
+- https://www.aemshop.net/fr/products/default
+- https://www.aemshop.net/fr/enrichment/product-banner
+- https://www.aemshop.net/fr/widgets/apparel
+- https://www.aemshop.net/.da/library/blocks/product-recommendations
+- https://www.aemshop.net/.da/library/templates/product-details-page
+- https://www.aemshop.net/.da/library/templates/category-page
