@@ -304,9 +304,45 @@ async function main() {
             mainfunction();
         } else {
             console.log("Issue accessing robots.txt, hence trying SiteMap directly ...");
-            var smURL = new URL(`/sitemap.xml`, newBaseURL);
-            sitemapFile = smURL.toString();
-            console.log(sitemapFile);
+            
+            // Check if the baseURL is already a sitemap URL
+            let sitemapFile;
+            if (baseURL.includes('sitemap') && baseURL.endsWith('.xml')) {
+                sitemapFile = baseURL;
+                // Extract the domain from the sitemap URL for proper origin
+                const sitemapUrl = new URL(baseURL);
+                newBaseURL = `${sitemapUrl.protocol}//${sitemapUrl.host}`;
+                console.log(`Using provided sitemap URL: ${sitemapFile}`);
+                console.log(`Extracted domain: ${newBaseURL}`);
+            } else {
+                // Try common sitemap paths
+                const sitemapPaths = ['/azcomsitemap.xml', '/sitemap.xml'];
+                let foundSitemap = false;
+                
+                for (const path of sitemapPaths) {
+                    var smURL = new URL(path, newBaseURL);
+                    sitemapFile = smURL.toString();
+                    console.log(`Trying sitemap: ${sitemapFile}`);
+                    
+                    const u = await loadSitemap(sitemapFile, newBaseURL, newBaseURL);
+                    if (u && u.length > 0) {
+                        console.log(`Found sitemap with ${u.length} URLs`);
+                        console.log("Total No. of URL's in the Sitemap: " + u.length);
+                        
+                        // Save report to file
+                        const domain = extractDomain(newBaseURL);
+                        saveReportToFile(domain, u.length, u);
+                        foundSitemap = true;
+                        break;
+                    }
+                }
+                
+                if (!foundSitemap) {
+                    console.log("No valid sitemap found");
+                }
+                return;
+            }
+            
             const u = await loadSitemap(sitemapFile, newBaseURL, newBaseURL);
             console.log(u);
             console.log("Total No. of URL's in the Sitemap: " + u.length);
