@@ -1,9 +1,18 @@
+// Disable SSL certificate validation globally
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 const { crawlPage, returnbrokenLinksURLs } = require('./crawl.js');
 const { checkPage404, returnbrokenLinksURLs404, checkClark404, checkClark404v1, checkurlshp } = require('./justbrokenlinks.js');
 const { loadURLsFromRobots, loadSitemap } = require('./sitemap.js');
 const { printReport, printBrokenLinks, printRedirects } = require('./report.js');
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
+
+// Create an HTTPS agent that ignores SSL certificate errors
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false
+});
 
 const crawlStatus = {
     crawled: 0,
@@ -266,11 +275,12 @@ async function main() {
             }
             const robotsURL = new URL('/robots.txt', newBaseURL);
             console.log(robotsURL);
-            resp = await fetch(robotsURL);
+            resp = await fetch(robotsURL, { agent: httpsAgent });
         } catch (err) {
             console.log(`Error fetching ${newBaseURL}/robots.txt: ${err.message}`);
+            resp = null;
         }
-        if (resp.status === 200) {
+        if (resp && resp.status === 200) {
             console.log(`Found robots.txt for ${baseURL}, hence getting URL's from Sitemap`);
             crawlStatus.urls = [];
             crawlStatus.urls = await loadURLsFromRobots(newBaseURL, newBaseURL);
@@ -316,7 +326,7 @@ async function main() {
                 console.log(`Extracted domain: ${newBaseURL}`);
             } else {
                 // Try common sitemap paths
-                const sitemapPaths = ['/azcomsitemap.xml', '/sitemap.xml'];
+                const sitemapPaths = ['/sitemap_index.xml', '/azcomsitemap.xml', '/sitemap.xml'];
                 let foundSitemap = false;
                 
                 for (const path of sitemapPaths) {
