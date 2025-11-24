@@ -1,5 +1,5 @@
 Sitemap Report for sling.com
-Generated on: 2025-07-25T18:07:10.664Z
+Generated on: 2025-11-11T10:14:55.697Z
 Total No. of URL's in the Sitemap: 470
 
 URLs from Sitemap:
@@ -155,9 +155,6 @@ URLs from Sitemap:
 - https://www.sling.com/help/en/troubleshooting/error-messages/error-22-29
 - https://www.sling.com/help/en/troubleshooting/error-messages/error-10-410
 - https://www.sling.com/help/en/troubleshooting/dvr-help
-- https://www.sling.com/help/en/troubleshooting/dvr-help/dvr-features
-- https://www.sling.com/help/en/troubleshooting/dvr-help/use-dvr
-- https://www.sling.com/help/en/troubleshooting/dvr-help/use-dvr/auto-record
 - https://www.sling.com/help/en/troubleshooting/tech-issues
 - https://www.sling.com/help/en/troubleshooting/tech-issues/buffering
 - https://www.sling.com/help/en/troubleshooting/tech-issues/freezing-skipping
@@ -372,6 +369,7 @@ URLs from Sitemap:
 - https://www.sling.com/latino-es/programming/copa-libertadores
 - https://www.sling.com/latino-es/programming/formula1
 - https://www.sling.com/latino-es/programming/ligapremier
+- https://www.sling.com/latino-es/programming/premiums
 - https://www.sling.com/latino-es/programming/vixpremium
 - https://www.sling.com/latino-es/service
 - https://www.sling.com/latino-es/service/caribe
@@ -383,6 +381,7 @@ URLs from Sitemap:
 - https://www.sling.com/latino-es/sign-in-es
 - https://www.sling.com/latino-es/sign-in-es/activate-es
 - https://www.sling.com/latino-es/supported-devices
+- https://www.sling.com/latino-es/supported-devices/airtv-mini
 - https://www.sling.com/latino-es/supported-devices/amazon
 - https://www.sling.com/latino-es/supported-devices/android
 - https://www.sling.com/latino-es/supported-devices/apple
@@ -406,8 +405,8 @@ URLs from Sitemap:
 - https://www.sling.com/programming/entertainment
 - https://www.sling.com/programming/newsmax
 - https://www.sling.com/programming/paramount-showtime
-- https://www.sling.com/programming/max
 - https://www.sling.com/programming/espn
+- https://www.sling.com/programming/hbomax
 - https://www.sling.com/programming/horror
 - https://www.sling.com/programming/lifestyle
 - https://www.sling.com/programming/local-channels
@@ -417,11 +416,7 @@ URLs from Sitemap:
 - https://www.sling.com/programming/reruns
 - https://www.sling.com/programming/starz
 - https://www.sling.com/programming/true-crime
-- https://www.sling.com/programming/tune-in
-- https://www.sling.com/programming/tune-in-2
-- https://www.sling.com/programming/tune-in-3
 - https://www.sling.com/programming/yellowstone
-- https://www.sling.com/programming/hbomax
 - https://www.sling.com/rewards
 - https://www.sling.com/service
 - https://www.sling.com/service/dvr
@@ -432,6 +427,11 @@ URLs from Sitemap:
 - https://www.sling.com/service/sling-orange
 - https://www.sling.com/service/sling-orange-and-blue
 - https://www.sling.com/service/season-pass
+- https://www.sling.com/service/compare-plans
+- https://www.sling.com/service/day-pass
+- https://www.sling.com/service/sling-select
+- https://www.sling.com/service/week-pass
+- https://www.sling.com/service/weekend-pass
 - https://www.sling.com/shows
 - https://www.sling.com/sign-in
 - https://www.sling.com/sign-in/activate
@@ -452,9 +452,9 @@ URLs from Sitemap:
 - https://www.sling.com/sports/sec-acc
 - https://www.sling.com/sports/soccer
 - https://www.sling.com/sports/tennis
-- https://www.sling.com/sports/wrestling
 - https://www.sling.com/sports/wnba
 - https://www.sling.com/sports/ncaa-womens-basketball
+- https://www.sling.com/sports/wrestling
 - https://www.sling.com/supported-devices
 - https://www.sling.com/supported-devices/airtv-mini
 - https://www.sling.com/supported-devices/amazon
