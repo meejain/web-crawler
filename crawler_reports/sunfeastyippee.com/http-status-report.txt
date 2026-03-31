@@ -1,0 +1,205 @@
+HTTP Status Report for sunfeastyippee.com
+Generated on: 2025-12-16T10:56:08.357Z
+
+================================================================================
+SUMMARY
+================================================================================
+Total URLs Checked: 177
+✓ Success (2xx): 175
+→ Redirects (3xx): 2
+✗ Client Errors (4xx): 0
+✗ Server Errors (5xx): 0
+✗ Connection Errors: 0
+
+Status Code Breakdown:
+  200: 175 URLs
+  301: 1 URLs
+  302: 1 URLs
+
+================================================================================
+DETAILED RESULTS
+================================================================================
+
+
+SUCCESS (2xx):
+--------------------------------------------------------------------------------
+[200] https://sunfeastyippee.com/our-story.html
+[200] https://sunfeastyippee.com/recipe-listing.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-roti-cutlet.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-shawarma.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodle-garlic-bread-toast.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-aloo-cheese-toast-sandwich.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-mushroom-stir-fry.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-coconut-noodles-curry.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-methi-muthia.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pumpkin-noodles-fritters.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-paneer-bhurji-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-slider.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-quick-noodles-egg-cake.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-peppy-stuffed-capsicum.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-on-toast.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-potato-atta-noodles-soup.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-spicy-pesto-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-spicy-creamy-noodles-boat.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-paneer-noodles-paneer-fry.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-ragada-patties.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodle-cheese-bread-pakora.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-one-pot-meal.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-bombay-style-frankie.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-phodniche-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-spinach-corn-atta-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-quick-noodle-eggs-fry.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-hot-dog.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodle-lasagna.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheesy-cheesy-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-egg-toast.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodle-masala-maska-pav.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-paani-puri.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-pulao.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-veggies-toasty.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheesy-stick.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cabbage-noodles-bites.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cracker-biscuit.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-ulta-fulta-grill.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-tasty-grilled-paneer.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-egg-noodles-roll.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-chinese-noodles-soup.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-spicy-kanda-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-stuffed-cheesy-bun.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-uttapam.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-chop.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-paani-puri-shots.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-mushroom-noodles-chilla.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-carrot-hash-brown.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-mood-masala-noodles-base-pizza.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-alfredo-sauce-recipe.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-stuffed-cups.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-stuffed-bell-peppers.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-skewers.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-inside-out-pie.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-burritos.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-ring-samosas.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-falafel.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-paneer-spindles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-zucchini-bites.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-crispy-rings.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-butter-popcorn.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-bruschetta-bites.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-sushi-recipe.html
+[200] https://sunfeastyippee.com/recipe-listing/burger-with-yippee-buns.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-finger-fries.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-noodles-in-tamrind-sauce.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-egg-roll.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-chatpata-bhel.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-butter-fried-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-corn-dog.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-mughlai-paratha.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-hot-and-sweet.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-kachori.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-stuffed-kulcha.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-lasagna.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-crepe-roll.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-soupy.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-indian-chowmein.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-sizzler.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheese-chilli-toast.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-veg-lollipop.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-creamy-mayo.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-chilli-cheese.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-paneer-achari.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-koliwada.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-vadapav.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-scotch-eggs.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-bowl-pizza.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pav-bhaji.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-samosa.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-makhani-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheese-garlic-bread.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheese-roti-roll.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-burnt-garlic-egg.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-egg-shakshouka.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-spring-roll.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-scrambled-eggs.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-ravioli.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-quesadilla.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-taco.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheesy-cuppa-noodles.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-dosa.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-omelet.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-burger.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheese-paratha.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-chilla.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-momo.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pizza.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pockets.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-stir-fried.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-tangy-tomato-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-tacos-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-spinach-and-corn-cheese-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-sour-cream-onion-omlette.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pesto-pasta-with-egg.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-tikki.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-tart.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-spanish-omelette.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-popcorn.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-mini-buddha-bowl.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-lasagna.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-one-pot-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-colorful-manchow-soup.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-cheese-balls.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-20-pasta-football.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-nachos.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-creamy-tomato-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-korean-corn-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-lemon-butter-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-fluffy-pasta-pancake.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-creamy-cheese-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-creamy-pasta-bowl.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-chilly-beans-pasta.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheesy-pasta-sandwich.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-pasta-bread-roll.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheesy-pasta-franky.html
+[200] https://sunfeastyippee.com/recipe-listing/yippee-cheesy-cauliflower-pasta.html
+[200] https://sunfeastyippee.com/faqs.html
+[200] https://sunfeastyippee.com/privacy-policy.html
+[200] https://sunfeastyippee.com/better-world.html
+[200] https://sunfeastyippee.com/media.html
+[200] https://sunfeastyippee.com/diy-listing.html
+[200] https://sunfeastyippee.com/quality-control.html
+[200] https://sunfeastyippee.com/terms-of-use.html
+[200] https://sunfeastyippee.com/contact-us.html
+[200] https://sunfeastyippee.com/about-us.html
+[200] https://sunfeastyippee.com/factory-address.html
+[200] https://sunfeastyippee.com/yippee-pasta-score.html
+[200] https://sunfeastyippee.com/yippee-wow-masala.html
+[200] https://sunfeastyippee.com/yippee-korean-noodles-k-drama.html
+[200] https://sunfeastyippee.com/yippee-korean-noodles-veggies.html
+[200] https://sunfeastyippee.com/yippee-korean-noodles-spicy.html
+[200] https://sunfeastyippee.com/yippe-mood-masala.html
+[200] https://sunfeastyippee.com/product-listing.html
+[200] https://sunfeastyippee.com/product-listing/magic-masala-noodles.html
+[200] https://sunfeastyippee.com/product-listing/power-up-atta-noodles.html
+[200] https://sunfeastyippee.com/product-listing/mood-masala.html
+[200] https://sunfeastyippee.com/product-listing/wow-masala.html
+[200] https://sunfeastyippee.com/product-listing/magic-with-millets.html
+[200] https://sunfeastyippee.com/product-listing/noodles.html
+[200] https://sunfeastyippee.com/product-listing/saucy-masala.html
+[200] https://sunfeastyippee.com/product-listing/quik-mealz-chicken-delight.html
+[200] https://sunfeastyippee.com/product-listing/pasta-treat-masala.html
+[200] https://sunfeastyippee.com/product-listing/pasta-treat-tomato-cheese.html
+[200] https://sunfeastyippee.com/product-listing/quik-mealz-veggie-delight.html
+[200] https://sunfeastyippee.com/product-listing/pasta-treat-cheese.html
+[200] https://sunfeastyippee.com/product-listing/pasta-treat-sour-cream-and-onion.html
+[200] https://sunfeastyippee.com/product-listing/tricolor-pasta-creamy-corn.html
+[200] https://sunfeastyippee.com/product-listing/korean-fiery-hot-style.html
+[200] https://sunfeastyippee.com/product-listing/korean-spicy-kimchi-style.html
+[200] https://sunfeastyippee.com/yippee-magic-masala.html
+[200] https://sunfeastyippee.com/yippee-pasta-masala-variety.html
+[200] https://sunfeastyippee.com/yippee-pasta-masala-onesolution.html
+[200] https://sunfeastyippee.com/yippee-at-ten.html
+[200] https://sunfeastyippee.com/sitemap.html
+
+REDIRECTS (3xx):
+--------------------------------------------------------------------------------
+[301] https://sunfeastyippee.com/products.html → https://sunfeastyippee.com/product-listing.html
+[302] https://sunfeastyippee.com/product-listing/tricolor-pasta-masala.html → /header-pages/product-listing/tricolor-pasta-masala.html

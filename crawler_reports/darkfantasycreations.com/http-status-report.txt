@@ -1,0 +1,77 @@
+HTTP Status Report for darkfantasycreations.com
+Generated on: 2025-12-17T15:16:25.855Z
+
+================================================================================
+SUMMARY
+================================================================================
+Total URLs Checked: 50
+✓ Success (2xx): 49
+→ Redirects (3xx): 1
+✗ Client Errors (4xx): 0
+✗ Server Errors (5xx): 0
+✗ Connection Errors: 0
+
+Status Code Breakdown:
+  200: 49 URLs
+  301: 1 URLs
+
+================================================================================
+DETAILED RESULTS
+================================================================================
+
+
+SUCCESS (2xx):
+--------------------------------------------------------------------------------
+[200] https://darkfantasycreations.com/
+[200] https://darkfantasycreations.com/footer-pages/about-us.html
+[200] https://darkfantasycreations.com/footer-pages/contact-us.html
+[200] https://darkfantasycreations.com/footer-pages/old-site-map.html
+[200] https://darkfantasycreations.com/footer-additional-pages/faqs.html
+[200] https://darkfantasycreations.com/footer-additional-pages/terms-of-use.html
+[200] https://darkfantasycreations.com/footer-additional-pages/privacy-policy.html
+[200] https://darkfantasycreations.com/recipes.html
+[200] https://darkfantasycreations.com/media.html
+[200] https://darkfantasycreations.com/about-us.html
+[200] https://darkfantasycreations.com/error_page.html
+[200] https://darkfantasycreations.com/recipes/dark-fantasy-barfi.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-ice-cream-sandwich.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-chunky-milkshake.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-jar-dessert.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-brownies.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-gujiya.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-chakkara-pongal.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-cupcakes.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-kheer.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-kulfi.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-mousse.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-mug-cake.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-parfait.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-salted-caramel-tart.html
+[200] https://darkfantasycreations.com/recipes/sunfeast-dark-fantasy-white-chocolate-fudge.html
+[200] https://darkfantasycreations.com/recipes/tiramisu-with-dark-fantasy-chocofills.html
+[200] https://darkfantasycreations.com/recipes/dark-fantasy-cookies-and-cream-roulade.html
+[200] https://darkfantasycreations.com/recipes/coffee-fills-pound-cake-with-mocha-cream.html
+[200] https://darkfantasycreations.com/recipes/choco-fills-peanut-butter-and-salted-caramekl-fluff.html
+[200] https://darkfantasycreations.com/recipes/coffee-fills-and-sweet-basil-shake.html
+[200] https://darkfantasycreations.com/recipes/spiced-date-pudding-with-choco-fills.html
+[200] https://darkfantasycreations.com/recipes/traveller-s-cake-with-figs-and-amaranth.html
+[200] https://darkfantasycreations.com/recipes/choco-fills-cupcake-with-cookie-cream-frosting.html
+[200] https://darkfantasycreations.com/recipes/dark-fantasy-white-forest-cake.html
+[200] https://darkfantasycreations.com/contact-us.html
+[200] https://darkfantasycreations.com/privacy-policy.html
+[200] https://darkfantasycreations.com/terms-of-use.html
+[200] https://darkfantasycreations.com/faqs.html
+[200] https://darkfantasycreations.com/dark-fantasy-tiffin-box.html
+[200] https://darkfantasycreations.com/df-tiffin-box-pranita.html
+[200] https://darkfantasycreations.com/df-ttifin-box-sameera.html
+[200] https://darkfantasycreations.com/sitemap.html
+[200] https://darkfantasycreations.com/dark-fantasy-desserts.html
+[200] https://darkfantasycreations.com/terms-and-conditions.html
+[200] https://darkfantasycreations.com/srk-poem.html
+[200] https://darkfantasycreations.com/product-listing.html
+[200] https://darkfantasycreations.com/FantasyZarooriHai.html
+[200] https://darkfantasycreations.com/campaign-macroon-fills.html
+
+REDIRECTS (3xx):
+--------------------------------------------------------------------------------
+[301] https://www.darkfantasycreations.com/our-products.html → https://darkfantasycreations.com/our-products.html

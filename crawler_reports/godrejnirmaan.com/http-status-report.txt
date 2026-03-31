@@ -1,0 +1,38 @@
+HTTP Status Report for godrejnirmaan.com
+Generated on: 2025-12-10T23:20:58.183Z
+
+================================================================================
+SUMMARY
+================================================================================
+Total URLs Checked: 15
+✓ Success (2xx): 15
+→ Redirects (3xx): 0
+✗ Client Errors (4xx): 0
+✗ Server Errors (5xx): 0
+✗ Connection Errors: 0
+
+Status Code Breakdown:
+  200: 15 URLs
+
+================================================================================
+DETAILED RESULTS
+================================================================================
+
+
+SUCCESS (2xx):
+--------------------------------------------------------------------------------
+[200] https://www.godrejnirmaan.com/resources/five-mistakes-that-small-business-owners-should-avoid
+[200] https://www.godrejnirmaan.com/resources/godrejcapitalnirmaan
+[200] https://www.godrejnirmaan.com/resources/msme-certification
+[200] https://www.godrejnirmaan.com/resources/msmes-facing-delayed-payment
+[200] https://www.godrejnirmaan.com/resources/msmes-sambandh
+[200] https://www.godrejnirmaan.com/resources/msmes-sampark
+[200] https://www.godrejnirmaan.com/resources/road-map-to-success
+[200] https://www.godrejnirmaan.com/resources/scale-your-business
+[200] https://www.godrejnirmaan.com/resources/simplified-business-operations
+[200] https://www.godrejnirmaan.com/resources/take-your-business-online
+[200] https://www.godrejnirmaan.com/resources/unlockinggrowth
+[200] https://www.godrejnirmaan.com/media-room
+[200] https://www.godrejnirmaan.com/login
+[200] https://www.godrejnirmaan.com/
+[200] https://www.godrejnirmaan.com/resources

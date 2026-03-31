@@ -129,7 +129,14 @@ function extractDomain(url) {
 }
 
 // Helper function to save report data to file
-function saveReportToFile(domain, totalUrls, urls) {
+function saveReportToFile(
+    domain,
+    totalUrls,
+    urls,
+    reportHeading = 'Sitemap Report',
+    urlListHeading = 'URLs from Sitemap:',
+    totalUrlsLabel = "Total No. of URL's in the Sitemap"
+) {
     try {
         // Create crawler_reports directory if it doesn't exist
         const reportsDir = path.join(process.cwd(), 'crawler_reports');
@@ -143,11 +150,11 @@ function saveReportToFile(domain, totalUrls, urls) {
 
         // Prepare report content
         const reportContent = [
-            `Sitemap Report for ${domain}`,
+            `${reportHeading} for ${domain}`,
             `Generated on: ${new Date().toISOString()}`,
-            `Total No. of URL's in the Sitemap: ${totalUrls}`,
+            `${totalUrlsLabel}: ${totalUrls}`,
             '',
-            'URLs from Sitemap:',
+            urlListHeading,
             ...urls.map(url => `- ${url}`)
         ].join('\n');
 
@@ -199,22 +206,15 @@ async function crawling(baseURL) {
         crawlStatus.urls.push(url);
     }
 
-    //Code below to get the LHS of the URL's from Google Crawler
-    raw_data = [];
-    targetUrl = '';
-
-    crawlStatus.urls.slice(0, 5).forEach((url) => {
-        const urlPattern = /^http/;
-        if (!urlPattern.test(url)) {
-            url = 'https://' + url;
-        }
-
-        targetUrl = url;
-        inputObject = new inputObj('AMS', url);
-        raw_data.push(inputObject);
-    });
-    console.log("Fetching the Performance Scores for the URL's from Google Crawler . . . ");
-    mainfunction();
+    const domain = extractDomain(normalizeUrl(baseURL));
+    saveReportToFile(
+        domain,
+        crawlStatus.urls.length,
+        crawlStatus.urls,
+        'Crawl Report',
+        'URLs from crawl:',
+        "Total No. of URL's discovered"
+    );
 }
 
 async function checking404(baseURL) {
