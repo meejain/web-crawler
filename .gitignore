@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Generated crawler output (reports, sitemap dumps, HTTP status checks)
+crawler_reports/
